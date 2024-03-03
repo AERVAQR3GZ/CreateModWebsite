@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Sets the dynamic view of the webpage accross devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This is what appears as the tab name-->
+<title>The Create Mod</title>
+<link rel="stylesheet" href="style.css">
+<!-- These are the fonts that are in this website-->
+<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script defer src="app.js"></script>
+</head>
+<div class="container">
+<section class="header">
+	<nav>
+		<!--The importing of the Create Rise and Shine logo into the webpage-->
+		<a href="boxmodel.html"><img src="images/logo.png" alt="The Create 'Rise and Shine' Logo" class="image-1"></a>
+		<div class="nav-links" id="navLinks">
+			<!--This is the X mark for the Hamburger Menu-->
+			<i class="fa-solid fa-xmark" style="color: #fffcdd;" onclick=hideMenu()></i>
+			<ul>
+				<!-- All of the links to different sub pages.-->
+				<!--<li><a href="">HOME</a></li>-->
+				<li><a href="boxmodel.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="https://github.com/Creators-of-Create/Create">THE GITHUB </a></li>
+				<li><a href="https://github.com/Creators-of-Create/Create/wiki">OFFICIAL WIKI</a></li>
+				<li><a href="https://create.fandom.com/wiki/Create_Mod_Wiki">UNOFFICIAL WIKI</a></li>
+			</ul>
+		</div>
+		<!--This is the hamburger menu symble for the phone menu.-->
+		<i class="fa-solid fa-bars" style="color: #fffcdd;" onclick=showMenu()></i>
+	</nav>
+	<!--This sets the element to a text box.-->
+	<div class="text-box">
+		<!--Heading-->
+		<h1>THIS IS CREATE!</h1>
+		<!--Text/Paragraph. Interchangable, as the needs for this website/the assesment criteria might change.-->
+		<p>The create mod is an incredible mod for minecraft, for both forge and fabric.
+			It has over 66 Million downloads!</p>
+		<!--Link. Meant to be for the site that it came from, but could be just a game.-->
+		<a href="" class="create-rules">Visit the official site</a>
+
+	</div>
+</section>
+<!---------JavaScript for Colapsable Menu for Phone---------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+<!------THE HISTORY------->
+
+<section class="history">
+	<!--<img src="images/page-bg-2.png">-->
+	<h1>A Brief History of Minecraft <span class="animateoohyea">Create Mod</span></h1>
+	<p>The create mod was made in July 18th 2019, and started with just one developer, simibubi.</p>
+	<!--This sets it to be a row-->
+	<div class="row">
+		<!--This is a predifined variable, allowing for ease of editing in mass.-->
+		<div class="history-col">
+			<h3>In The Beginning</h3>
+			<p>In the beginning Create Mod was a simple <span class="animateoohyea">hobby project</span>. It quickly
+				turned into more than that. It began as a forge only mod, but quickly adapted to the <span
+					class="animateoohyea">Fabric environment in 2022</span> by a separate enthusiast.</p>
+		</div>
+		<div class="history-col">
+			<h3>The Continued Development</h3>
+			<p>The Create Mod has been <span class="animateoohyea">non-stop developed</span> and upkept since its
+				first making in 2019. It has <span class="animateoohyea">over 55 different versions</span> for
+				forge, as the minecraft environment adapted and the modding communities wants changed.</p>
+		</div>
+		<div class="history-col">
+			<h3>The Massive Spike In Popularity</h3>
+			<p>Create mod has grew a massive amount since its creation, gaining more than <span
+					class="animateoohyea">68 Million!</span> downloads on the Forge Version alone! It has grown to
+				have over <span class="animateoohyea">150 patreon supporters!</span></p>
+		</div>
+	</div>
+
+</section>
+<!--Setting a variable for what it can be called back to as later. I felt
+Borded so that is why the name is so long, also I have an extentsion
+(VS Code) that allows for the autocompleting of these types of 
+variables accross html and css.-->
+
+<!--I think these are prettey self explanitory. I shant be explaining them again. Or will I??????-->
+<!--Origanally this was good-soup-create-mod-is-very-enjoyable-for-many-people-all-around-the-world 
+but something wasnt working and I didnt know why so I thought the hyphons would be
+messing it up, so I just removed it in the end.-->
+
+<!--------------IMAGE SHOWCASE------------------>
+
+<section class="showcase">
+	<!--This is the title, above the images (Not part of them).-->
+	<h1>What Is The Create Mod?</h1>
+	<p>Create is a minecraft mod created by simibubi that allows you to <span class="animateoohyea"> make
+			Contraptions,<br>
+			and automate processes</span> using Rotational Power/Stress Units.<br>
+		It adds many mechanical components and block variants to the game.<br>
+		Create is also a decoration mod, <span class="animateoohyea">adding over 550+ Blocks!</span> </p>
+	<div class="row">
+		<!--This is for each image.-->
+		<div class="showcase-col hidden">
+			<img src="images/opengates.png">
+			<div class="layer">
+				<!--The text at the bottom of the images.-->
+				<h3>THE COGS<br>THAT MAKE IT TURN</h3>
+			</div>
+		</div>
+		<div class="showcase-col hidden">
+			<img src="images/industrial-1.png">
+			<div class="layer">
+				<h3>THE INDUSTRIAL<br>ASPECTS</h3>
+			</div>
+		</div>
+		<div class="showcase-col hidden">
+			<img src="images/nature.png">
+			<div class="layer">
+				<h3>THE BEAUTY</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!---------------WHY PEOPLE LIKE IT----------------->
+<section class="whyitisliked">
+	<h1>The Reason For Its Popularity</h1>
+	<p>The Create Mod is liked as the added elements of tech are
+		designed to<br> leave <span class="animateoohyea">as many design choices to the player as possible</span>.
+		With Create, the game <span class="animateoohyea">isn't played inside <br>a bunch of Menus</span>,
+		it challenges you to <span class="animateoohyea">setup contraptions</span> of <br> animated components
+		working together in many possible arrangements.</p>
+	<div class="row">
+		<div class="whyitisliked-col hidden2">
+			<img src="images/halsmovingcastlesteamengine.png">
+		</div>
+		<div class="whyitisliked-col hidden2">
+			<img src="images/train-courtyard.png">
+		</div>
+		<div class="whyitisliked-col hidden2">
+			<img src="images/industrial-fr-fr.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="whyitisliked-col">
+			<h3>Extreme freedom</h3>
+			<p>Create mod has<span class="animateoohyea">thousands of videos and creators</span> that love to invent
+				and discover different ways of completing the same task.</p>
+		</div>
+		<div class="whyitisliked-col">
+			<h3>The decoration</h3>
+			<p>Create mod adds over 500 blocks, all respectively having <span class="animateoohyea">both their
+					technical and decoration/aesthetic uses</span>. It allows for a vast expanse of possibilities.
+			</p>
+		</div>
+		<div class="whyitisliked-col">
+			<h3>The technical</h3>
+			<p>The incorporation of the <span class="animateoohyea">Create Mod is vast</span>, both being suitable
+				for beginners with the in game tutorials and extreme hobbyists with the .</p>
+		</div>
+	</div>
+</section>
+
+<!-------------HOW TO INSTALL---------------->
+
+<section class="reviews">
+	<h1>Reddit Reviews</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentsaese aliquet turpis nulla.</p>
+
+	<div class="row">
+		<div class="reviews-col">
+			<img src="images/review-1.png">
+			<div>
+				<p>Create is not like the other tech mods where you have an end goal and porpuse of the mod is to
+					get to that end goal. Create is more about just doing things your way, its not about making the
+					most optimized farms and factories (although you could do that as well) its about making
+					ridiculusly overcompicatited contraptions and making your world feel alive its not about the
+					destination its about the journey
+					If you want to have an end goal and still have a great experience with create I recommend Create
+					Above and Beyond but only if you're good at the mod, I dont recommend it if you're still
+					learning Create.</p>
+				<a href="https://www.reddit.com/r/CreateMod/comments/zna948/comment/j0fv7tv/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+					target="_blank">
+					<h3>Just_Gyro_770</h3>
+				</a>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+			</div>
+		</div>
+		<div class="reviews-col">
+			<img src="images/review-2.png">
+			<div>
+				<p>It's about enjoying a process. While for you the gears mess up the aesthetic, for many, the gears
+					are the aesthetic. After a decade of increasingly mundane magic box mods that did more and more
+					with less and less... The push back to fully mechanical, indulgent overengineering... It's kind
+					of glorious.</p>
+				<a href="https://www.reddit.com/r/feedthebeast/comments/tpzy9v/comment/i2e7yak/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+					target="_blank">
+					<h3>Lessiarty</h3>
+				</a>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star" style="color:#c9a400"></i>
+				<i class="fa-solid fa-star-half-stroke" style="color:#c9a400"></i>
+			</div>
+		</div>
+	</div>
+</section>
+<!----------IMAGE GALLERY------------->
+<section class="gallery">
+	<h2>A short Image Gallery of Create</h2>
+	<p>These images are some left over screenshots I had from the create mod trailer world. The link to the create
+		mod trailer world download can be found here.</p>
+	<div class="slider-wrapper">
+		<div class="slider">
+			<img id="slide-1" class="slide-1" src="images/gallery-2.png" alt="An automatic milk farm">
+			<img id="slide-2" class="slide-2" src="images/gallery-1.png" alt="An industrial Level Oven running off steam engines">
+			<img id="slide-3" class="slide-3" src="images/gallery-3.png" alt="A movable roof coming down onto waterworks">
+			<img id="slide-4" class="slide-4" src="images/gallery-4.png"
+				alt="A wheat conveyor belt, transferring and moving wheat from one place to another">
+			<img id="slide-5"  class="slide-5"src="images/gallery-5.png"
+				alt="A celebration of the cake being automated in the Trailer World">
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1" class="slide-1"></a>
+			<a href="#slide-2" class="slide-2"></a>
+			<a href="#slide-3" class="slide-3"></a>
+			<a href="#slide-4" class="slide-4"></a>
+			<a href="#slide-5" class="slide-5"></a>
+		</div>
+	</div>
+</section>
+<!--------WHY YOU SHOULD PLAY------------->
+<section class="why-you-should-play">
+	<h1>Install and play the Minecraft Create mod<br> and its various addons from anywhere* in the world!</h1>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/create" class="create-rules">CHECK IT OUT HERE</a>
+</section>
+
+<!----------CONTACT FORM----------->
+<div class="contact-container">
+	<form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+		<div class="contact-left-title">
+			<h2>Leave me <span class="hoogidyboogidy">Feedback</span></h2>
+			<hr>
+		</div>
+		<input type="hidden" name="access_key" value="8c77d245-4978-4188-8e26-fa82bf7e25a3">
+		<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+		<input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+		<textarea name="message" placeholder="Your Message for Me" class="contact-inputs" required></textarea>
+		<button type="submit">Submit <img src="images/arrow_icon.png"></button>
+	</form>
+	<div class="contact-right">
+		<img src="images/right_img.png">
+	</div>
+</div>
+<!--------FOOOOOOOTer--------->
+
+<section class="footer">
+	<h4>About the creators</h4>
+	<p>I am a 14 year old boy who lives in Australia. I chose to make a website about this for my IST (Computing
+		Technology) class at school.</p>
+	<p>This mod is not my original work. This is a Minecraft mod by the creator <a
+			href="https://www.curseforge.com/members/simibubi">simibubi</a></p>
+	<p>*If the mod is available for download, minecraft is availble, and the modding of minecraft is allowed.</p>
+</section>
+<script>
+jQuery(document).on('click', '.slider-nav', function(e) {
+  e.preventDefault();
+});
+</script>
+</div>

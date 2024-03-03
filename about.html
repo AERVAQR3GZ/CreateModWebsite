@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Create Mod</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body>
+<div class="container">
+    <section class="sub-header">
+        <nav>
+            <a href="boxmodel.html"><img src="images/logo.png" alt="The Create 'Rise and Shine' Logo" class="image-1"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" style="color: #fffcdd;" onclick=hideMenu()></i>
+                <ul>
+                    <li><a href="boxmodel.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="https://github.com/Creators-of-Create/Create">THE GITHUB </a></li>
+                    <li><a href="https://github.com/Creators-of-Create/Create/wiki">OFFICIAL WIKI</a></li>
+                    <li><a href="https://create.fandom.com/wiki/Create_Mod_Wiki">UNOFFICIAL WIKI</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" style="color: #fffcdd;" onclick=showMenu()></i>
+        </nav>
+        <h1>About Create</h1>
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+<!----------ABOUT CREATE CONTENT----------->
+<section class="about-create">
+    <div class="row">
+        <div class="about-col">
+            <h1>Create mod is a One of a Kind</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                cupiditate eveniet inventore praesentium accusantium quos provident
+                placeat molestiae, aut ex pariatur. Minima a fuga nisi sunt! Iure
+                voluptates possimus a.
+            </p>
+            <a href class="create-rules yellow-create-rules">VISIT NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.png" alt />
+        </div>
+    </div>
+</section>
+</body>
+<section class="footer">
+    <h4>About the creators</h4>
+    <p>
+        I am a 14 year old boy who lives in Australia. I chose to make a website
+        about this for my IST (Computing Technology) class at school.
+    </p>
+    <p>
+        This mod is not my original work. This is a Minecraft mod by the creator
+        <a href="https://www.curseforge.com/members/simibubi">simibubi</a>
+    </p>
+    <p>
+        *If the mod is available for download, minecraft is available, and the
+        modding of minecraft is allowed.
+    </p>
+</section>
+</html>
+</div>
