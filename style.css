@@ -1,150 +1,227 @@
+/* Coolors Exported Palette - https://coolors.co/801c00-d62828-f77f00-fcbf49-fffcdd */
+
+:root {
+	/* CSS HEX */
+	--barn-red-hex: #801c00ff;
+	--fire-engine-red-hex: #d62828ff;
+	--orange-wheel-hex: #f77f00;
+	--orange-wheel-hex-lighter: #fa9f25;
+	--xanthous-hex: #fcbf49ff;
+	--xanthous-hex-lighter: #fddb91;
+	--cornsilk-hex: #fffcddff;
+
+	/* CSS HSL */
+	--barn-red-hsl: hsla(13, 100%, 25%, 1);
+	--fire-engine-red-hsl: hsla(0, 69%, 50%, 1);
+	--orange-wheel-hsl: hsla(31, 100%, 48%, 1);
+	--xanthous-hsl: hsla(40, 97%, 64%, 1);
+	--cornsilk-hsl: hsla(55, 100%, 93%, 1);
+
+	/* CSS RGBA */
+	--barn-red-rgba: rgba(128, 28, 0, 1);
+	--fire-engine-red-rgba: rgba(214, 40, 40, 1);
+	--orange-wheel-rgba: rgba(247, 127, 0, 1);
+	--xanthous-rgba: rgba(252, 191, 73, 1);
+	--cornsilk-rgba: rgba(255, 252, 221, 1);
+
+	/* CSS Gradient */
+	--gradient-top: linear-gradient(0deg, #801c00ff, #d62828ff, #f77f00ff, #fcbf49ff, #fffcddff);
+	--gradient-right: linear-gradient(90deg, #801c00ff, #d62828ff, #f77f00ff, #fcbf49ff, #fffcddff);
+	--gradient-bottom: linear-gradient(
+		180deg,
+		#801c00ff,
+		#d62828ff,
+		#f77f00ff,
+		#fcbf49ff,
+		#fffcddff
+	);
+	--gradient-left: linear-gradient(270deg, #801c00ff, #d62828ff, #f77f00ff, #fcbf49ff, #fffcddff);
+	--gradient-top-right: linear-gradient(
+		45deg,
+		#801c00ff,
+		#d62828ff,
+		#f77f00ff,
+		#fcbf49ff,
+		#fffcddff
+	);
+	--gradient-bottom-right: linear-gradient(
+		135deg,
+		#801c00ff,
+		#d62828ff,
+		#f77f00ff,
+		#fcbf49ff,
+		#fffcddff
+	);
+	--gradient-top-left: linear-gradient(
+		225deg,
+		#801c00ff,
+		#d62828ff,
+		#f77f00ff,
+		#fcbf49ff,
+		#fffcddff
+	);
+	--gradient-bottom-left: linear-gradient(
+		315deg,
+		#801c00ff,
+		#d62828ff,
+		#f77f00ff,
+		#fcbf49ff,
+		#fffcddff
+	);
+	--gradient-radial: radial-gradient(#801c00ff, #d62828ff, #f77f00ff, #fcbf49ff, #fffcddff);
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  /*This sets the font for the whole doccument.*/
-  font-family: "Poppins", sans-serif; 
+	margin: 0;
+	padding: 0;
+	/*This sets the font for the whole doccument.*/
+	font-family: "Poppins", sans-serif;
 }
 .header {
-  min-height: 100vh;
-  width: 100%;    
-  /*Background image tint*/
-  background-image: linear-gradient(rgba(90, 42, 39, 0.5),rgba(90, 42, 39, 0.5)),
-    url(images/banner.png);
-  /*Centers background image*/
-  background-position: center;
-  /*Stretches the image if needed.*/
-  background-size: cover;
-  /*This make is so that the background image changes with the window size.*/
-  position: relative;
+	min-height: 100vh;
+	width: 100%;
+	/*Background image tint*/
+	background-image: linear-gradient(rgba(128, 28, 0, 0.4), rgba(128, 28, 0, 0.4)),
+		url(images/banner.png);
+	/*Centers background image*/
+	background-position: center;
+	/*Stretches the image if needed.*/
+	background-size: cover;
+	/*This make is so that the background image changes with the window size.*/
+	position: relative;
 }
 body {
-  margin: 0;
-  overflow-x: hidden;
+	margin: 0;
+	overflow-x: hidden;
 }
 /*This is the preset for all animated text (The glowing stuff), that when given the span class "animateoohyea" 
 will appear animated and bigger*/
 
 nav img {
-  /*Yippity yoink, this code is going straight in the bottom banner :).*/
-  transition: transform 0.5s ease-in-out;
-  width: 150px;
+	/*Yippity yoink, this code is going straight in the bottom banner :).*/
+	transition: transform 0.5s ease-in-out;
+	width: 150px;
 }
 nav img:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 nav i {
-  display: none;
+	display: none;
 }
 nav {
-  /*This allows you to manipulate the size and place in relation to other elements (Enables flexbox layout mode)*/
-  display: flex;
-  padding: 2% 6%;
-  /*This defines how the browser distributes the space, and how the spacing between them is defined as the 
+	/*This allows you to manipulate the size and place in relation to other elements (Enables flexbox layout mode)*/
+	display: flex;
+	padding: 2% 6%;
+	/*This defines how the browser distributes the space, and how the spacing between them is defined as the 
     same for all of them.*/
-  justify-content: space-between;
-  align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
-.nav-links, .not-nav-links{
-  /*Defines how much the elements can flex/move*/
-  flex: 1;
-  text-align: right;
+.nav-links,
+.not-nav-links {
+	/*Defines how much the elements can flex/move*/
+	flex: 1;
+	text-align: right;
 }
-.nav-links ul li, .not-nav-links ul li{
-  list-style: none;
-  display: inline-block;
-  /*This determines the spacing between the links.*/
-  padding: 8px 12px;
-  /*This sets the position relative to the window size*/
-  position: relative;
+.nav-links ul li,
+.not-nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	/*This determines the spacing between the links.*/
+	padding: 8px 12px;
+	/*This sets the position relative to the window size*/
+	position: relative;
 }
 .nav-links ul li a {
-  color: white;
-  /*This means that there is no underline to the link.*/
-  text-decoration: none;
-  font-size: 13px;
+	color: white;
+	/*This means that there is no underline to the link.*/
+	text-decoration: none;
+	font-size: 13px;
 }
 /*This sets the underline for the links. Setting the width to 0% means they dont show up,
 but the "Hover" tag in the next element means that it appears after it is hovered over. */
-.nav-links ul li::after, .not-nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #ffd04f;
-  /*This determines the type of box that generated for this element.*/
-  display: block;
-  /*This sets the thickness of the margin for the lines. 
+.nav-links ul li::after,
+.not-nav-links ul li::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: var(--orange-wheel-hex);
+	/*This determines the type of box that generated for this element.*/
+	display: block;
+	/*This sets the thickness of the margin for the lines. 
     Auto means that it goes from the middle outward.*/
-  margin: auto;
-  /*This is the time taken in order to transition from the 0% width to the 100% width,
+	margin: auto;
+	/*This is the time taken in order to transition from the 0% width to the 100% width,
     as seen when hovering. */
-  transition: 0.5s;
+	transition: 0.5s;
 }
 /*This is the animation of the text.*/
 /*Simply makes the links have an underline after they are hovered over.*/
-.nav-links ul li:hover::after, .not-nav-links ul li:hover::after  {
-  width: 100%;
-  border-radius: 50px;
+.nav-links ul li:hover::after,
+.not-nav-links ul li:hover::after {
+	width: 100%;
+	border-radius: 50px;
 }
 /*This changes the paragraphs/the titles text color.*/
 .text-box {
-  width: 90%;
-  color: white;
-  /*This means that it is un changeable, and stays persistent through window size.*/
-  position: absolute;
-  /*Moves the element exactly to the center of the main container.*/
-  top: 50%;
-  left: 50%;
-  /*Makes it in the center of the parent div.*/
-  transform: translate(-50%, -50%);
-  text-align: center;
+	width: 90%;
+	color: white;
+	/*This means that it is un changeable, and stays persistent through window size.*/
+	position: absolute;
+	/*Moves the element exactly to the center of the main container.*/
+	top: 50%;
+	left: 50%;
+	/*Makes it in the center of the parent div.*/
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 .text-box h1 {
-  font-size: 62px;
+	font-size: 62px;
 }
 .text-box p {
-  /*This means it will be 10px from the top, 0px from the left and right, and 40px from the bottom.*/
-  margin: 10px 0 40px;
-  font-size: 14px;
-  color: white;
+	/*This means it will be 10px from the top, 0px from the left and right, and 40px from the bottom.*/
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: white;
 }
 /*This sets what would have been a boring old standard link to the almighty
 and extravigant link box!*/
 .create-rules {
-  /*Determines the type of box made for an element*/
-  display: inline-block;
-  /*Again, this is the link decoration, and in this case removes the underline and the purple.*/
-  text-decoration: none;
-  /*This one is prittey self explanitory...*/
-  color: white;
-  /*Sets the border thickness for the box.*/
-  border: 1px solid white;
-  /*Sets the distance between the elements border and the text inside. 
+	/*Determines the type of box made for an element*/
+	display: inline-block;
+	/*Again, this is the link decoration, and in this case removes the underline and the purple.*/
+	text-decoration: none;
+	/*This one is prittey self explanitory...*/
+	color: white;
+	/*Sets the border thickness for the box.*/
+	border: 1px solid white;
+	/*Sets the distance between the elements border and the text inside. 
     In this case it is 12px for the top and 34px for the sides.*/
-  padding: 12px 34px;
-  /*Ahh man, I cant figure out what this does for the life of me!*/
-  font-size: 13px;
-  /*Sets the background to be transparent, so that the background can be seen through it.*/
-  background: transparent;
-  /*Makes the position able to warp and move in relation to the window size and the position of other elements.*/
-  position: relative;
-  /*This makes it so that an effect or a transition can appear when it (A cursor) is hovering
+	padding: 12px 34px;
+	/*Ahh man, I cant figure out what this does for the life of me!*/
+	font-size: 13px;
+	/*Sets the background to be transparent, so that the background can be seen through it.*/
+	background: transparent;
+	/*Makes the position able to warp and move in relation to the window size and the position of other elements.*/
+	position: relative;
+	/*This makes it so that an effect or a transition can appear when it (A cursor) is hovering
     over the element.*/
-  cursor: pointer;
-  border-radius: 15px;
-  transition: 1s;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: 1s;
 }
 .create-rules:hover {
-  border: 1px solid #ffd900;
-  background: #f4ae36;
-  /*You do not know just how tempted I was to set the transition time to 1200s*/
+	border: 1px solid var(--xanthous-hex);
+	background: var(--orange-wheel-hex);
+	/*You do not know just how tempted I was to set the transition time to 1200s*/
 }
 /*Dear golly gosh I am about to regret this,
 but I am not bothered to ask if we need to make it mobile compatible, 
 so here goes nothing!*/
 
 nav i {
-  display: none;
-  visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
 
 /*Never mind, I give up. None of the visuals such as the hamburger menu are working as intedned. They appear, 
@@ -163,326 +240,224 @@ Continue to code the phone mode.
 /*Putting .history here means that everything under the section class of history
 will have these effects applied to them, making it awfully nice for a break.*/
 .history {
-  /*Sets the width of the margin, allowing for the text boxes to stretch out to the sides.*/
-  width: 98%;
-  /*Sets it to the center.*/
-  margin: auto;
-  text-align: center;
-  /*The distance from the top (End of background image/start of next page.)*/
-  padding-top: 100px;
+	/*Sets the width of the margin, allowing for the text boxes to stretch out to the sides.*/
+	width: 98%;
+	/*Sets it to the center.*/
+	margin: auto;
+	text-align: center;
+	/*The distance from the top (End of background image/start of next page.)*/
+	padding-top: 100px;
 }
 h1 {
-  font-size: 36px;
-  /*This sets the sub font, which in this case is the semi bold of Poppuiiiiii or something.*/
-  font-weight: 600;
+	font-size: 36px;
+	/*This sets the sub font, which in this case is the semi bold of Poppuiiiiii or something.*/
+	font-weight: 600;
 }
 p {
-  /*Colour of the Paragraph fonts.*/
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
+	/*Colour of the Paragraph fonts.*/
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
 }
 .row {
-  margin: 5%;
-  /*This is so that all of the div inside this row will be in the column.*/
-  display: flex;
-  /*This defines how the browser distributes the space, and how the spacing between them is defined as the 
+	margin: 5%;
+	/*This is so that all of the div inside this row will be in the column.*/
+	display: flex;
+	/*This defines how the browser distributes the space, and how the spacing between them is defined as the 
     same for all of them.*/
-  justify-content: space-between;
+	justify-content: space-between;
 }
 .history-col {
-  /*Sets the initial size of the item.*/
-  flex-basis: 31%;
-  /*Backround colour of the box.*/
-  background: #fffcdd;
-  /*This sets the radius of the curved corners.*/
-  border-radius: 18px;
-  /*Sets the margin from the bottom of the box.*/
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  /*This allows the inclusion of the padding/border in the total width/height.*/
-  box-sizing: border-box;
-  /*Putting the transition time here means that
+	/*Sets the initial size of the item.*/
+	flex-basis: 31%;
+	/*Backround colour of the box.*/
+	background: var(--cornsilk-hex);
+	/*This sets the radius of the curved corners.*/
+	border-radius: 18px;
+	/*Sets the margin from the bottom of the box.*/
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	/*This allows the inclusion of the padding/border in the total width/height.*/
+	box-sizing: border-box;
+	/*Putting the transition time here means that
     the transition will be for both the mouse moving over and away.
     I learnt this the hard way. (Total 30mins).*/
-  transition: 0.5s;
+	transition: 0.5s;
 }
 h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
 }
 /*This sets the shadow for the text boxes when you hover over them.*/
 .history-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 /*---------------Why it is liked. --------------*/
 /*This now fixes the animated images disapearing when in mobile view.*/
-@media (min-width: 801px) {
-  .hidden:nth-child(1) {
-    transition: 0.75s;
-    /*Sets  blur on the image that is later removed.*/
-    filter: blur(5px);
-    /*Makes it slide in from the left real smooth.*/
-    transform: translateX(-150%);
-    /*OOOOh noooo, where did it go?????*/
-    opacity: 0;
-  }
-  .hidden:nth-child(2) {
-    transition: 0.75s;
-    filter: blur(5px);
-    transform: translateZ(-100%);
-    opacity: 0;
-  }
-  .hidden:nth-child(3) {
-    transition: 0.75s;
-    filter: blur(5px);
-    transform: translateX(150%);
-    opacity: 0;
-  }
-  /*This is the second round of images that animate. */
-  .hidden2:nth-child(1) {
-    transform: translateX(150%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-  }
-  .hidden2:nth-child(2) {
-    transform: translateX(150%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-    transition-delay: 150ms;
-  }
-  .hidden2:nth-child(3) {
-    transform: translateX(150%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-    transition-delay: 250ms;
-  }
-}
 /*This is the show class that shows what it looks like once it is observed.
 Wait a minute, this seems oddly familiar... HMMMMMM (Atoms when observed do not keep their location.*/
 .show:nth-child(1) {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
-  transform: translateZ(0);
-  transform: translateY(0);
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+	transform: translateZ(0);
+	transform: translateY(0);
 }
 .show:nth-child(2) {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
-  transform: translateZ(0);
-  transform: translateY(0);
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+	transform: translateZ(0);
+	transform: translateY(0);
 }
 .show:nth-child(3) {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
-  transform: translateZ(0);
-  transform: translateY(0);
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+	transform: translateZ(0);
+	transform: translateY(0);
 }
 .showcase {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
 }
 .showcase-col {
-  /*Sets the initial size of the flex object.*/
-  flex-basis: 32%;
-  border-radius: 25px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow-x: hidden;
+	/*Sets the initial size of the flex object.*/
+	flex-basis: 32%;
+	border-radius: 25px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow-x: hidden;
 }
 .showcase-col img {
-  width: 100%;
-  display: block;
-  border-radius: 25px;
+	width: 100%;
+	display: block;
+	border-radius: 25px;
 }
 /*These settings are what it will look like once it has been hovered over,
 and after the animation has finished. */
 .layer {
-  /*This means that the overlay that ends up changing colours is not 
+	/*This means that the overlay that ends up changing colours is not 
     obstructing the underlying image to begin with.*/
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  /*Changes the offset of the box to be none.*/
-  top: 0;
-  /*Changes the offset of the box to be none.*/
-  left: 0;
-  transition: 0.5s;
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/*Changes the offset of the box to be none.*/
+	top: 0;
+	/*Changes the offset of the box to be none.*/
+	left: 0;
+	transition: 0.5s;
 }
 .layer:hover {
-  /*Sets the background colour once it has been hovered over.*/
-  background: rgba(206, 170, 0, 0.6);
+	/*Sets the background colour once it has been hovered over.*/
+	background: #f7800080;
 }
 .layer h3 {
-  /*Allows it to take up all the space if it needs it, but no more. */
-  width: 100%;
-  /*Defines the type of font from the family that was imported. In this case it is Regular I think.*/
-  font-weight: 500;
-  color: white;
-  font-size: 26px;
-  bottom: 0;
-  /*Sets the text to be centered (50% in from the width of the box).*/
-  left: 50%;
-  /*This means it will be in the bottom and center from the x axis.*/
-  transform: translateX(-50%);
-  position: absolute;
-  /*AA! Sorry, it scared me as it happened to have dissapeared...*/
-  opacity: 0;
-  transition: 0.5s;
+	/*Allows it to take up all the space if it needs it, but no more. */
+	width: 100%;
+	/*Defines the type of font from the family that was imported. In this case it is Regular I think.*/
+	font-weight: 500;
+	color: white;
+	font-size: 26px;
+	bottom: 0;
+	/*Sets the text to be centered (50% in from the width of the box).*/
+	left: 50%;
+	/*This means it will be in the bottom and center from the x axis.*/
+	transform: translateX(-50%);
+	position: absolute;
+	/*AA! Sorry, it scared me as it happened to have dissapeared...*/
+	opacity: 0;
+	transition: 0.5s;
 }
 .layer:hover h3 {
-  bottom: 49%;
-  opacity: 1;
+	bottom: 49%;
+	opacity: 1;
 }
-/*------------GALLERY---------------*/
-.gallery {
-  padding: 2rem;
-}
-.gallery h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: xx-large;
-}
-.gallery p {
-  text-align: center;
-  max-width: 700px;
-  margin: 10px auto 20px;
-  line-height: 1.4;
-}
-.slider-wrapper {
-  position: relative;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-.slider {
-  display: flex;
-  aspect-ratio: 16/9;
-  overflow-x: auto;
-  scrollbar-width: none;
-  position: relative;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 1.75rem;
-}
-.slider img {
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-  overflow-x: scroll;
-}
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 75%;
-  transition: opacity ease 250ms;
-}
-.slider-nav a:hover {
-  opacity: 100%;
-}
-
 /*------------ Why it is liked -----------*/
 
 .whyitisliked {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
 }
 .whyitisliked-col {
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: -5%;
-  text-align: left;
-  overflow-x: hidden;
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: -5%;
+	text-align: left;
+	overflow-x: hidden;
 }
 .whyitisliked-col img {
-  width: 100%;
-  border-radius: 25px;
-  display: flex;
-  margin: 0px;
-  margin-top: 30px;
+	width: 100%;
+	border-radius: 25px;
+	display: flex;
+	margin: 0px;
+	margin-top: 30px;
 }
 .whyitisliked-col p {
-  padding: 0;
+	padding: 0;
 }
 .whyitisliked-col h3 {
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
 }
 
 /*-----------------HOW TO INSTALL-------------------*/
 
 .reviews {
-  width: 80%;
-  margin: auto;
-  padding-top: 100px;
-  text-align: center;
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
 }
 .reviews-col {
-  flex-basis: 44%;
-  border-radius: 27px;
-  margin-bottom: 5%;
-  text-align: left;
-  background: #fffcdd;
-  padding: 25px;
-  cursor: pointer;
-  display: flex;
+	flex-basis: 44%;
+	border-radius: 27px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: var(--cornsilk-hex);
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
 }
 .reviews-col a {
-  text-decoration: none;
-  text-decoration-color: black;
-  color: black;
-  transition: 0.3s;
+	text-decoration: none;
+	text-decoration-color: black;
+	color: black;
+	transition: 0.3s;
 }
 /*Sets the color to be the same even after visited.*/
 .reviews-col a:link a:visited {
-  text-decoration: none;
+	text-decoration: none;
 }
 /*This is so the link can be seen as a link.*/
 .reviews-col a:hover {
-  color: rgba(206, 170, 0, 1);
+	color: var(--xanthous-rgba);
 }
 /*PFP of the redit users. */
 .reviews-col img {
-  height: 40px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 50%;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 50%;
 }
 .reviews-col p {
-  padding: 0;
+	padding: 0;
 }
 .reviews-col h3 {
-  margin-top: 15px;
-  text-align: left;
+	margin-top: 15px;
+	text-align: left;
 }
 .reviews-col .fa {
-  color: #c9a400;
+	color: var(--orange-wheel-hex);
 }
 /*This is for the mobile version of the reddit reviews. I might change the 
 reviews entirely as they were fun to code, but they dont really fit.*/
@@ -490,293 +465,80 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 /*--------------WHY YOU SHOULD PLAY----------------*/
 
 .why-you-should-play {
-  margin: 100px auto;
-  width: 80%;
-  /*Sets the background for the banner at the bottom of the page. */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/banner-2.png);
-  background-position: center;
-  background-size: cover;
-  border-radius: 35px;
-  text-align: center;
-  padding: 100px 0;
-  scale: 1;
-  transition: transform 0.5s ease-in-out;
+	margin: 100px auto;
+	width: 80%;
+	/*Sets the background for the banner at the bottom of the page. */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(images/gallery-2.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 35px;
+	text-align: center;
+	padding: 100px 0;
+	scale: 1;
+	transition: transform 0.5s ease-in-out;
 }
 .why-you-should-play:hover {
-  transform: scale(1.025);
+	transform: scale(1.025);
 }
 .why-you-should-play h1 {
-  color: white;
-  margin-bottom: 40px;
-  padding: 0;
+	color: white;
+	margin-bottom: 40px;
+	padding: 0;
 }
 
-/*------------IT IS THE SUBMIITITIIT BUTTON---------------*/
-.contact-container {
-  height: 100vh;
-  display: flex;
-  background: linear-gradient(#fffef7, #fff8d5, #fffef7);
-  align-items: center;
-  justify-content: space-evenly;
-}
-.contact-left {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px;
-  transition: 1s;
-}
-.contact-left-title h2 {
-  font-weight: 600;
-  color: #cabc75;
-  font-size: 40px;
-  margin-bottom: 5px;
-  transition: 1s;
-}
-.contact-left-title hr {
-  border: none;
-  width: 125px;
-  height: 5px;
-  background-color: #cabc75;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  transition: ease-in-out 1s;
-}
-.contact-left-title:hover hr {
-  width: 405px;
-  margin-left: 205px;
-  width: 195px;
-  background-color: #f8db00;
-}
-.hoogidyboogidy {
-  transition: ease-in-out 1s;
-}
-.contact-left-title:hover h2 .hoogidyboogidy {
-  color: #f8db00;
-}
-.contact-inputs {
-  width: 400px;
-  height: 50px;
-  border: none;
-  outline: none;
-  padding-left: 25px;
-  font-weight: 500;
-  color: #666666;
-  border-radius: 50px;
-}
-.contact-left textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
-}
-.contact-inputs:focus {
-  border: 2px solid #ffd04f;
-}
-.contact-inputs::placeholder {
-  color: #a9a9a9;
-}
-.contact-left button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #fff;
-  gap: 10px;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(270deg, #ffd04f, #fab36d);
-  cursor: pointer;
-}
-.contact-left button img {
-  height: 15px;
-}
-.contact-right img {
-  width: 500px;
-}
 /*--------Foottttter---------------*/
 
 .footer {
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
 }
 .footer h4 {
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-@media (max-width: 800px) {
-  .why-you-should-play h1 {
-    font-size: 24px;
-  }
-  .reviews-col img {
-    margin-left: 0px;
-    margin-right: 15px;
-  }
-  .hidden:nth-child(1) {
-    transition: 0.75s;
-    /*Sets  blur on the image that is later removed.*/
-    filter: blur(5px);
-    /*Makes it slide in from the left real smooth.*/
-    transform: translateZ(-100%);
-    /*OOOOh noooo, where did it go?????*/
-    opacity: 0;
-  }
-  .hidden:nth-child(2) {
-    transition: 0.75s;
-    filter: blur(5px);
-    transform: translateZ(-100%);
-    opacity: 0;
-  }
-  .hidden:nth-child(3) {
-    transition: 0.75s;
-    filter: blur(5px);
-    transform: translateZ(-100%);
-    opacity: 0;
-  }
-  /*This is the second round of images that animate. */
-  .hidden2:nth-child(1) {
-    transform: translateZ(-100%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-  }
-  .hidden2:nth-child(2) {
-    transform: translateZ(-100%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-    transition-delay: 150ms;
-  }
-  .hidden2:nth-child(3) {
-    transform: translateZ(-100%);
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s;
-    transition-delay: 250ms;
-  }
-  .show:nth-child(1) {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transform: translateZ(0);
-    transform: translateY(0);
-  }
-  .show:nth-child(2) {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transform: translateZ(0);
-    transform: translateY(0);
-  }
-  .show:nth-child(3) {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transform: translateZ(0);
-    transform: translateY(0);
-  }
-  .row {
-    /*Sets how the items within the row change size with window/devie size. 
-        In this case it means that they compress towards eachother in the mobile mode.*/
-    flex-direction: column;
-  }
-  .container {
-    max-width: 800px;
-    overflow-x: hidden;
-  }
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    /*This position is aint not is not mooving, nuh uh (not moving.)*/
-    position: absolute;
-    background: #c9a400;
-    /*This means that it is complete height.*/
-    height: 100vh;
-    width: 200px;
-    /*Boxes margin/no margin as it is set to 0.*/
-    top: 0;
-    right: -200px;
-    overflow-x: hidden;
-    /*Sets the alignment of the links in the menu.*/
-    text-align: left;
-    /*This controls the stacking order of the links and the background text/elements, 
-        if it were to be set to 0 for example, 
-        It would have the parargraph and heading text overlapping with the menu.*/
-    z-index: 2;
-    transition: 1s;
-  }
-  nav i {
-    display: block;
-    color: #fffcdd;
-    margin: 10px;
-    font-size: 22px;
-    /*Sets the cursor to be seen as interavtable*/
-    cursor: pointer;
-    color: #fffcdd;
-    /*Makes sure that this is visible as a previous value set it to hidden.*/
-    visibility: visible;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  .contact-inputs {
-    width: 80vw;
-  }
-  .contact-right {
-    display: none;
-  }
-  .nav-links {
-    background-image: linear-gradient(#f8db00, #faab00);
-    animation: bg-nav-links-animation 15s ease infinite alternate;
-    background-size: 400% 400%;
-  }
-  @keyframes bg-nav-links-animation {
-    0% {
-      background-position: left;
-    }
-    33.3% {
-      background-position: top;
-    }
-    66.6% {
-      background-position: right;
-    }
-    100% {
-      background-position: bottom;
-    }
-  }
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
 }
 .animateoohyea {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(#f8db00, #faab00);
-  background-size: 450% 450%;
-  animation: animate 15s ease infinite;
-  font-weight: bold;
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
+	background-size: 450% 450%;
+	animation: animate 15s ease infinite;
+	font-weight: bold;
+}
+.animateoohyea-changed-color-1 {
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(var(--xanthous-hex-lighter), var(--xanthous-hex));
+	background-size: 450% 450%;
+	animation: animate 15s ease infinite;
+	font-weight: bold;
+}
+.animateoohyea-changed-color-2 {
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(var(--orange-wheel-hex-lighter), var(--orange-wheel-hex));
+	background-size: 450% 450%;
+	animation: animate 15s ease infinite;
+	font-weight: bold;
 }
 @keyframes animate {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
+	0% {
+		background-position: 0 0;
+	}
+	25% {
+		background-position: 100% 0;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	75% {
+		background-position: 0 100%;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -784,59 +546,221 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 /*--------------------------      ABOUT PAGE      ------------------------------------------*/
 /*--------------------------                      ------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
-
 .sub-header {
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/about.png);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  position: relative;
+	height: 10vw;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: relative;
+	padding-bottom: 100px;
 }
-.sub-header h1 {
-  margin-top: 100px;
+.curves-body {
+	margin: 0;
+	color: white;
+	background: #4d1100;
+	/* overflow-x: hidden; */
 }
-.about-create {
-  width: 100%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
+.curves-section {
+	/*Allows its children to be abselutely possitioned within it.*/
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 0;
+	/*Gives 20% of the acctuall view poet width (20vw)*/
+	padding: 125px 20vw;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
-.about-col {
-  flex-basis: 48%;
-  padding: 30px 2px;
+.curves-section a {
+	text-decoration: none;
+	color: grey;
 }
-.about-col img {
-  width: 100%;
-  border-radius: 18px;
+.creative-tab-img1 {
+	width: 600px;
+	transform: translate(-0%, 25%);
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
 }
-.about-col h1 {
-  padding-top: 0;
+.creative-tab-img2 {
+	width: 600px;
+	transform: translate(0%, -9%);
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
 }
-.about-col p {
-  padding: 15px 0 25px;
+.menu-img1 {
+	width: 600px;
+	/* transform: translateX(-200%); */
+	transform: translateY(20%);
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
 }
-.yellow-create-rules {
-  border: 1px solid#ffd900;
-  background: transparent;
-  color: #f4ae36;
+.menu-img2 {
+	width: 300px;
+	transform: translate(-165%, -10%);
+	padding-top: 240px;
+	display: flex;
+	position: absolute;
 }
-.yellow-create-rules:hover {
-  color: #fff;
+.menu-img3 {
+	width: 200px;
+	transform: translate(260%, -10%);
+	image-orientation: flip;
+	padding-top: 260px;
+	display: flex;
+	position: absolute;
 }
-@media (max-width: 800px) {
-  .sub-header {
-    max-width: 800px;
-    overflow-x: hidden;
-  }
-  .shouldhideit{
-    max-width: 800px;
-    overflow-x: hidden;
-  }
+.impact-img1 {
+	width: 400px;
+	transform: translateX(-140%);
+	padding-top: 400px;
+	display: flex;
+	position: absolute;
 }
+.impact-img3 {
+	width: 400px;
+	transform: translateX(140%);
+	position: absolute;
+	padding-top: 400px;
+}
+.rpm-img1 {
+	width: 175px;
+	transform: translateX(-280%);
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
+}
+.rpm-img2 {
+	width: 300px;
+	transform: translateX(180%);
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
+}
+.rpm-img3 {
+	width: 300px;
+	transform: translate(207.5%, -13%);
+	image-orientation: 210deg;
+	padding-top: 200px;
+	display: flex;
+	position: absolute;
+}
+.build-img1 {
+	width: 180px;
+	transform: translateX(-260%);
+	padding-top: 150px;
+	display: flex;
+	position: absolute;
+}
+.build-img2 {
+	width: 275px;
+	transform: translateX(180%);
+	padding-top: 350px;
+	display: flex;
+	position: absolute;
+}
+.player-img {
+	width: 250px;
+	transform: translate(460%, -100%);
+	padding-top: 220px;
+	display: flex;
+	position: absolute;
+}
+.charcoal {
+	background: var(--barn-red-hex);
+}
+.myrtle-green {
+	background: #ab2214ff;
+}
+.persian-green {
+	background: var(--fire-engine-red-hex);
+}
+.saffron {
+	background: #e75414ff;
+}
+.earth-yellow {
+	background: var(--orange-wheel-hex);
+}
+.coral {
+	background: var(--xanthous-hex);
+}
+.burnt-sienna {
+	background: var(--cornsilk-hex);
+	color: black;
+}
+.curves {
+	position: absolute;
+	height: 500px;
+	padding-bottom: 0px;
+	width: 100%;
+	bottom: 0;
+}
+.curves-section p,
+h1 {
+	padding-top: 100px;
+}
+
+.spacer {
+	aspect-ratio: 900/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.layer1 {
+	background-image: url("images/waves1.svg");
+}
+.layer2 {
+	background-image: url("images/waves2.svg");
+}
+.layer3 {
+	background-image: url("images/waves3.svg");
+}
+.layer4 {
+	background-image: url("images/waves4.svg");
+}
+.layer5 {
+	background-image: url("images/waves5.svg");
+}
+.layer6 {
+	background-image: url("images/waves6.svg");
+}
+.layer7 {
+	background-image: url("images/waves7.svg");
+}
+.footer-about {
+	width: 100%;
+	padding-top: 100px;
+	text-align: center;
+	padding: 30px 0;
+	background-color: var(--cornsilk-hex);
+	color: black;
+	transform: translateY(-100%);
+	position: absolute;
+}
+.footer-about a {
+	color: blue;
+}
+
+.curves-section p {
+	color: white;
+	font-size: 15px;
+	z-index: 5;
+	/* mix-blend-mode: difference; */
+}
+/* .curves-section p,
+h1 {
+	padding-top: 100px;
+} */
+/* .curves-section.coral p {
+	column-count: 2;
+	column-gap: 50px;
+} */
+
 /****************************
  * ***********************  *
  * * *******************  * *
@@ -848,3 +772,837 @@ reviews entirely as they were fun to code, but they dont really fit.*/
  * * *******************  * *
  * ***********************  *
  ****************************/
+.nottobescaled {
+	transition: transform 0.5s ease-in-out;
+	width: 150px;
+}
+.nav-2 img:hover {
+	transform: scale(1.2);
+}
+.content p {
+	height: 1px;
+}
+.nav-2 i {
+	display: none;
+}
+.nav-2 {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+.nav-links-2 {
+	flex: 1;
+	text-align: right;
+}
+.nav-links-2 ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+}
+.nav-links-2 ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links-2 ul li::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: var(--orange-wheel-hex);
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links-2 ul li:hover::after {
+	width: 100%;
+	border-radius: 50px;
+}
+.onlytexthome {
+	padding: 100px 200px;
+}
+.gallery-html {
+	overflow-y: hidden;
+	position: absolute;
+	display: block;
+	width: 100%;
+	background: var(--xanthous-hex);
+}
+.home {
+	/* position: relative; */
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* background: var(--xanthous-hex); */
+	margin-bottom: 110px;
+	z-index: 0;
+}
+.home .image-slide-parent img {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	object-fit: cover;
+	background-size: cover;
+}
+.home::before {
+	z-index: 1;
+	content: "";
+	position: absolute;
+	background: rgba(247, 127, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.slider-navigation {
+	position: relative;
+	display: flex;
+	z-index: 3;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-80px);
+	margin-bottom: 12px;
+	padding-top: 200px;
+}
+.slider-navigation .slider-btn {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+	transition: 0.3s ease;
+	z-index: 4;
+	position: relative;
+}
+.slider-navigation .slider-btn:not(:last-child) {
+	margin-right: 20px;
+}
+.slider-navigation .slider-btn:hover {
+	transform: scale(1.2);
+}
+
+.onlytexthome p {
+	padding-left: 0;
+	color: white;
+	font-weight: 400;
+}
+.onlytexthome h1 {
+	font-size: 4em;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 75px;
+	margin-bottom: 40px;
+	color: white;
+}
+.home .content {
+	z-index: 1;
+	display: none;
+}
+.home .content.active {
+	z-index: 1;
+	display: block;
+}
+.container .home {
+	z-index: 1;
+}
+.styled-text {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.slider-navigation .slider-btn.active {
+	background: var(--fire-engine-red-hex);
+}
+.image-slide {
+	position: absolute;
+	width: 100%;
+	clip-path: circle(0% at 0 37.5%);
+}
+.image-slide.active {
+	clip-path: circle(150% at 0 50%);
+	transition: 2s ease;
+	transition-property: clip-path;
+}
+/*--------------------------CONTACT ME PAGE----------------------------*/
+.contact-html {
+	overflow-y: hidden;
+}
+.nav-3 img:hover {
+	transform: scale(1.2);
+}
+.nav-3 i {
+	display: none;
+}
+.nav-3 {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+.nav-links-3 {
+	flex: 1;
+	text-align: right;
+}
+.nav-links-3 ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+}
+.nav-links-3 ul li a {
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links-3 ul li::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: var(--orange-wheel-hex);
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links-3 ul li:hover::after {
+	width: 100%;
+	border-radius: 50px;
+}
+.contact-container {
+	height: 100vh;
+	display: flex;
+	background: linear-gradient(#fffef7, #fff8d5, #fffef7);
+	align-items: center;
+	justify-content: space-evenly;
+	transform: translateY(-10%);
+}
+.contact-left {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+	transition: 1s;
+}
+.contact-left-title h2 {
+	font-weight: 600;
+	color: var(--xanthous-hex);
+	font-size: 40px;
+	margin-bottom: 5px;
+	transition: 1s;
+}
+.contact-left-title hr {
+	border: none;
+	width: 125px;
+	height: 5px;
+	background-color: var(--xanthous-hex);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	transition: ease-in-out 1s;
+}
+.contact-left-title:hover hr {
+	width: 405px;
+	margin-left: 205px;
+	width: 195px;
+	background-color: var(--orange-wheel-hex);
+}
+.hoogidyboogidy {
+	transition: ease-in-out 1s;
+}
+.contact-left-title:hover h2 .hoogidyboogidy {
+	color: var(--orange-wheel-hex);
+}
+.contact-inputs {
+	width: 400px;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	font-weight: 500;
+	color: #666666;
+	border-radius: 50px;
+}
+.contact-left textarea {
+	height: 140px;
+	padding-top: 15px;
+	border-radius: 20px;
+}
+.contact-inputs:focus {
+	border: 2px solid var(--xanthous-hex);
+}
+.contact-inputs::placeholder {
+	color: #a9a9a9;
+}
+.contact-left button {
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	color: #fff;
+	gap: 10px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(270deg, var(--xanthous-hex), var(--orange-wheel-hex));
+	cursor: pointer;
+}
+.contact-left button img {
+	height: 15px;
+}
+.contact-right img {
+	width: 500px;
+}
+@media (max-width: 768px) {
+	.content h1 {
+		transform: translateY(-50%);
+	}
+	.content p {
+		transform: translateY(-80%);
+		height: 150px;
+	}
+	.home .content.active {
+		z-index: 0;
+	}
+	.home {
+		width: 100%;
+	}
+	.content .slider-navigation {
+		z-index: 100;
+	}
+	.nav-links-3 ul li {
+		display: block;
+	}
+	.nav-links-3 ul li a {
+		color: white;
+	}
+	.nav-links-3 {
+		/*This position is aint not is not mooving, nuh uh (not moving.)*/
+		position: absolute;
+		background: var(--orange-wheel-hex);
+		/*This means that it is complete height.*/
+		height: 100vh;
+		width: 200px;
+		/*Boxes margin/no margin as it is set to 0.*/
+		top: 0;
+		right: -200px;
+		overflow-x: hidden;
+		/*Sets the alignment of the links in the menu.*/
+		text-align: left;
+		/*This controls the stacking order of the links and the background text/elements, 
+        if it were to be set to 0 for example, 
+        It would have the parargraph and heading text overlapping with the menu.*/
+		z-index: 2;
+		transition: 1s;
+	}
+	.nav-3 i {
+		display: block;
+		color: var(--fire-engine-red-hex);
+		margin: 10px;
+		font-size: 22px;
+		/*Sets the cursor to be seen as interavtable*/
+		cursor: pointer;
+		color: var(--cornsilk);
+		/*Makes sure that this is visible as a previous value set it to hidden.*/
+		visibility: visible;
+	}
+	.nav-links-3 ul {
+		padding: 30px;
+	}
+	.contact-left-title h2 {
+		font-size: 35px;
+	}
+	.contact-inputs {
+		height: 60px;
+		width: 80vw;
+	}
+	.contact-left-title hr {
+		border: none;
+		width: 105px;
+		height: 5px;
+		background-color: var(--xanthous-hex);
+		border-radius: 10px;
+		margin-bottom: 20px;
+		margin-left: 0px;
+		transition: ease-in-out 1s;
+	}
+	.contact-left-title:hover hr {
+		width: 170px;
+		margin-left: 180px;
+		background-color: var(--orange-wheel-hex);
+	}
+
+	.why-you-should-play h1 {
+		font-size: 24px;
+	}
+	.reviews-col img {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+	.row {
+		/*Sets how the items within the row change size with window/devie size. 
+        In this case it means that they compress towards eachother in the mobile mode.*/
+		flex-direction: column;
+	}
+	.container {
+		max-width: 800px;
+		overflow-x: hidden;
+	}
+	.text-box h1 {
+		font-size: 35px;
+	}
+	.nav-links ul li {
+		display: block;
+	}
+	.nav-links {
+		/*This position is aint not is not mooving, nuh uh (not moving.)*/
+		position: absolute;
+		background: var(--orange-wheel-hex);
+		/*This means that it is complete height.*/
+		height: 100vh;
+		width: 200px;
+		/*Boxes margin/no margin as it is set to 0.*/
+		top: 0;
+		right: -200px;
+		overflow-x: hidden;
+		/*Sets the alignment of the links in the menu.*/
+		text-align: left;
+		/*This controls the stacking order of the links and the background text/elements, 
+        if it were to be set to 0 for example, 
+        It would have the parargraph and heading text overlapping with the menu.*/
+		z-index: 2;
+		transition: 1s;
+	}
+	.emptyfornow {
+		padding-top: 0px;
+		background-color: var(--xanthous-hex);
+	}
+	nav i {
+		display: block;
+		color: var(--cornsilk);
+		margin: 10px;
+		font-size: 22px;
+		/*Sets the cursor to be seen as interavtable*/
+		cursor: pointer;
+		color: var(--cornsilk);
+		/*Makes sure that this is visible as a previous value set it to hidden.*/
+		visibility: visible;
+	}
+	.nav-links ul {
+		padding: 30px;
+	}
+	.contact-inputs {
+		width: 80vw;
+	}
+	.contact-right {
+		display: none;
+	}
+	.nav-links {
+		background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
+		animation: bg-nav-links-animation 15s ease infinite alternate;
+		background-size: 400% 400%;
+	}
+	@keyframes bg-nav-links-animation {
+		0% {
+			background-position: left;
+		}
+		33.3% {
+			background-position: top;
+		}
+		66.6% {
+			background-position: right;
+		}
+		100% {
+			background-position: bottom;
+		}
+	}
+	.sub-header {
+		height: 10vw;
+		width: 100%;
+		text-align: center;
+		color: white;
+		position: relative;
+	}
+	.curves-section {
+		padding: 20px 2vw;
+		/* height: 150px; */
+	}
+	.spacer {
+		aspect-ratio: 900/300;
+		width: 200%;
+		padding-top: 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.curves-section h1 {
+		font-size: 30px;
+		/* padding-top: 50px; */
+	}
+	.curves-section p,
+	h1 {
+		padding-top: 0px;
+	}
+	.player-img {
+		display: none;
+	}
+	.curves-section {
+		padding-top: 55%;
+		padding-bottom: 55%;
+		/*padding-bottom: 100px; */
+	}
+	.onlytexthome h1 {
+		font-size: 30px;
+		padding-left: 15px;
+	}
+	.onlytexthome p {
+		padding-left: 15px;
+		display: flex;
+	}
+	.onlytexthome {
+		padding: 100px 0px;
+		/* padding-left: 15px; */
+	}
+	.slider-navigation {
+		padding-top: 0px;
+	}
+	.nav-links-2 ul li {
+		display: block;
+	}
+	.nav-links-2 {
+		/*This position is aint not is not mooving, nuh uh (not moving.)*/
+		position: absolute;
+		background: var(--orange-wheel-hex);
+		/*This means that it is complete height.*/
+		height: 100vh;
+		width: 200px;
+		/*Boxes margin/no margin as it is set to 0.*/
+		top: 0;
+		right: -200px;
+		overflow-x: hidden;
+		/*Sets the alignment of the links in the menu.*/
+		text-align: left;
+		/*This controls the stacking order of the links and the background text/elements, 
+        if it were to be set to 0 for example, 
+        It would have the parargraph and heading text overlapping with the menu.*/
+		z-index: 2;
+		transition: 1s;
+	}
+	.nav-2 i {
+		display: block;
+		color: var(--cornsilk);
+		margin: 10px;
+		font-size: 22px;
+		/*Sets the cursor to be seen as interavtable*/
+		cursor: pointer;
+		color: var(--cornsilk);
+		/*Makes sure that this is visible as a previous value set it to hidden.*/
+		visibility: visible;
+	}
+	.nav-links-2 ul {
+		padding: 30px;
+	}
+	.why-you-should-play h1 {
+		font-size: 24px;
+	}
+	.reviews-col img {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+	.hidden:nth-child(1) {
+		transition: 0.75s;
+		/*Sets  blur on the image that is later removed.*/
+		filter: blur(5px);
+		/*Makes it slide in from the left real smooth.*/
+		transform: translateZ(-100%);
+		/*OOOOh noooo, where did it go?????*/
+		opacity: 0;
+	}
+	.hidden:nth-child(2) {
+		transition: 0.75s;
+		filter: blur(5px);
+		transform: translateZ(-100%);
+		opacity: 0;
+	}
+	.hidden:nth-child(3) {
+		transition: 0.75s;
+		filter: blur(5px);
+		transform: translateZ(-100%);
+		opacity: 0;
+	}
+	/*This is the second round of images that animate. */
+	.hidden2:nth-child(1) {
+		transform: translateZ(-100%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+	}
+	.hidden2:nth-child(2) {
+		transform: translateZ(-100%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+		transition-delay: 150ms;
+	}
+	.hidden2:nth-child(3) {
+		transform: translateZ(-100%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+		transition-delay: 250ms;
+	}
+	.show:nth-child(1) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+	.show:nth-child(2) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+	.show:nth-child(3) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+	.row {
+		/*Sets how the items within the row change size with window/devie size. 
+        In this case it means that they compress towards eachother in the mobile mode.*/
+		flex-direction: column;
+	}
+	.container {
+		max-width: 800px;
+		overflow-x: hidden;
+	}
+	.nav-links ul li {
+		display: block;
+	}
+	.nav-links {
+		/*This position is aint not is not mooving, nuh uh (not moving.)*/
+		position: absolute;
+		background: var(--orange-wheel-hex);
+		/*This means that it is complete height.*/
+		height: 100vh;
+		width: 200px;
+		/*Boxes margin/no margin as it is set to 0.*/
+		top: 0;
+		right: -200px;
+		overflow-x: hidden;
+		/*Sets the alignment of the links in the menu.*/
+		text-align: left;
+		/*This controls the stacking order of the links and the background text/elements, 
+        if it were to be set to 0 for example, 
+        It would have the parargraph and heading text overlapping with the menu.*/
+		z-index: 2;
+		transition: 1s;
+	}
+	nav i {
+		display: block;
+		color: var(--cornsilk);
+		margin: 10px;
+		font-size: 22px;
+		/*Sets the cursor to be seen as interavtable*/
+		cursor: pointer;
+		color: var(--cornsilk);
+		/*Makes sure that this is visible as a previous value set it to hidden.*/
+		visibility: visible;
+	}
+	.nav-links ul {
+		padding: 30px;
+	}
+	.contact-inputs {
+		width: 80vw;
+	}
+	.contact-right {
+		display: none;
+	}
+	.nav-links {
+		background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
+		animation: bg-nav-links-animation 15s ease infinite alternate;
+		background-size: 400% 400%;
+	}
+	@keyframes bg-nav-links-animation {
+		0% {
+			background-position: left;
+		}
+		33.3% {
+			background-position: top;
+		}
+		66.6% {
+			background-position: right;
+		}
+		100% {
+			background-position: bottom;
+		}
+	}
+	.animateoohyea {
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
+		background-size: 450% 450%;
+		animation: animate 15s ease infinite;
+		font-weight: bold;
+		position: relative;
+	}
+	.animateoohyea-changed-color-1 {
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(var(--xanthous-hex-lighter), var(--xanthous-hex));
+		background-size: 450% 450%;
+		animation: animate 15s ease infinite;
+		font-weight: bold;
+		position: relative;
+	}
+	.animateoohyea-changed-color-2 {
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(var(--orange-wheel-hex-lighter), var(--orange-wheel-hex));
+		background-size: 450% 450%;
+		animation: animate 15s ease infinite;
+		font-weight: bold;
+		position: relative;
+	}
+	.creative-tab-img1 {
+		display: none;
+	}
+	.creative-tab-img2 {
+		display: none;
+	}
+	.menu-img1 {
+		display: none;
+	}
+	.menu-img2 {
+		display: none;
+	}
+	.menu-img3 {
+		display: none;
+	}
+	.impact-img1 {
+		display: none;
+	}
+	.impact-img3 {
+		display: none;
+	}
+	.rpm-img1 {
+		display: none;
+	}
+	.rpm-img2 {
+		display: none;
+	}
+	.rpm-img3 {
+		display: none;
+	}
+	.build-img1 {
+		display: none;
+	}
+	.build-img2 {
+		display: none;
+	}
+	.player-img {
+		display: none;
+	}
+	.layer7 {
+		background-image: url("images/waves7.svg");
+	}
+	.curves-section.coral {
+		padding-bottom: 250px;
+		padding-top: 340px;
+	}
+	.curves-section.earth-yellow {
+		padding-bottom: 120px;
+		padding-top: 180px;
+	}
+	.curves-section.saffron {
+		padding-bottom: 180px;
+		padding-top: 260px;
+	}
+	.curves-section.persian-green {
+		padding-bottom: 80px;
+		padding-top: 160px;
+	}
+	.curves-section.myrtle-green {
+		padding-bottom: 40px;
+		padding-top: 140px;
+	}
+	.curves-section.charcoal {
+		padding-bottom: 140px;
+		/* padding-top: 140px; */
+	}
+}
+@media (min-width: 700px) {
+	.hidden:nth-child(1) {
+		transition: 0.75s;
+		/*Sets  blur on the image that is later removed.*/
+		filter: blur(5px);
+		/*Makes it slide in from the left real smooth.*/
+		transform: translateX(-150%);
+		/*OOOOh noooo, where did it go?????*/
+		opacity: 0;
+	}
+	.hidden:nth-child(2) {
+		transition: 0.75s;
+		filter: blur(5px);
+		transform: translateZ(-100%);
+		opacity: 0;
+	}
+	.hidden:nth-child(3) {
+		transition: 0.75s;
+		filter: blur(5px);
+		transform: translateX(150%);
+		opacity: 0;
+	}
+	/*This is the second round of images that animate. */
+	.hidden2:nth-child(1) {
+		transform: translateX(150%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+	}
+	.hidden2:nth-child(2) {
+		transform: translateX(150%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+		transition-delay: 150ms;
+	}
+	.hidden2:nth-child(3) {
+		transform: translateX(150%);
+		opacity: 0;
+		filter: blur(5px);
+		transition: 1s;
+		transition-delay: 250ms;
+	}
+	.show:nth-child(1) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+	.show:nth-child(2) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+	.show:nth-child(3) {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateX(0);
+		transform: translateZ(0);
+		transform: translateY(0);
+	}
+}

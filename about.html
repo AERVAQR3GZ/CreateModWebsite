@@ -1,76 +1,325 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Create Mod - About</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet" />
+		<script defer src="app.js"></script>
+	</head>
+	<body class="curves-body">
+		<div class="container">
+			<section class="sub-header">
+				<nav>
+					<a href="boxmodel.html">
+						<img
+							src="images/logo.png"
+							alt="The Create 'Rise and Shine' Logo"
+							class="image-1" />
+					</a>
+					<div class="nav-links" id="navLinks">
+						<i
+							class="fa-solid fa-xmark"
+							style="color: #fffcdd"
+							onclick="hideMenu()"></i>
+						<ul>
+							<li><a href="boxmodel.html">HOME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="gallery.html">THE GALLERY</a></li>
+							<li><a href="contact.html">CONTACT ME</a></li>
+						</ul>
+					</div>
+					<i class="fa-solid fa-bars" style="color: #fffcdd" onclick="showMenu()"></i>
+				</nav>
+				<h1>How Create Mod Works</h1>
+			</section>
+			<script>
+				var navLinks = document.getElementById("navLinks");
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Create Mod</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <script defer src="app.js"></script>
-</head>
-<body>
-<div class="container">
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="The Create 'Rise and Shine' Logo" class="image-1"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" style="color: #fffcdd;" onclick=hideMenu()></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="https://github.com/Creators-of-Create/Create">THE GITHUB </a></li>
-                    <li><a href="https://github.com/Creators-of-Create/Create/wiki">OFFICIAL WIKI</a></li>
-                    <li><a href="https://create.fandom.com/wiki/Create_Mod_Wiki">UNOFFICIAL WIKI</a></li>
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars" style="color: #fffcdd;" onclick=showMenu()></i>
-        </nav>
-        <h1>About Create</h1>
-    </section>
-<script>
-    var navLinks = document.getElementById("navLinks");
+				function showMenu() {
+					navLinks.style.right = "0";
+				}
 
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
+				function hideMenu() {
+					navLinks.style.right = "-200px";
+				}
+				// ! This does not work and IDK why, but it took me too long for me to delete it.
 
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script>
-<!----------ABOUT CREATE CONTENT----------->
-<section class="about-create">
-    <div class="row">
-        <div class="about-col">
-            <h1>Create mod is a One of a Kind</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-                cupiditate eveniet inventore praesentium accusantium quos provident
-                placeat molestiae, aut ex pariatur. Minima a fuga nisi sunt! Iure
-                voluptates possimus a.
-            </p>
-            <a href class="create-rules yellow-create-rules">VISIT NOW</a>
-        </div>
-        <div class="about-col">
-            <img src="images/about.png" alt />
-        </div>
-    </div>
-</section>
-</body>
-<section class="footer">
-    <h4>About the creators</h4>
-    <p>
-        I chose to make a website about this for my IST (Computing Technology) class at school.
-    </p>
-    <p>
-        This mod is not my original work. This is a Minecraft mod by the creator
-        <a href="https://www.curseforge.com/members/simibubi">simibubi</a>
-    </p>
-    <p>
-        *If the mod is available for download, minecraft is available, and the
-        modding of minecraft is allowed.
-    </p>
-</section>
+				// let A = document.querySelector(".curves-section");
+				// let B = A.querySelector(".effect");
+
+				// document.body.onmousemove = (e) => {
+				// 	let x = e.pageX;
+				// 	let y = e.pageY;
+				// 	B.style.top = y + "px";
+				// 	B.style.left = x + "px";
+				// }
+				// A.querySelectorAll(".image-hover").forEach(text => {
+				// 	text.onmousemove = () => {
+				// 		B.src = text.getAttribute("data-src");
+				// 	};
+				// });
+			</script>
+			<!----------ABOUidT CREATE CONTENT----------->
+			<div class="layer1 spacer"></div>
+			<section class="curves-section charcoal">
+				<h1>
+					What
+					<strong class="animateoohyea">other mods</strong>
+					should you have installed?
+				</h1>
+				<p>
+					Create mod can be
+					<strong class="animateoohyea">played in modpacks</strong>
+					or as a single mod, but with the possibilities of the recipes being very
+					different between versions or being changed between modpacks, I recommend using
+					<a href="https://www.curseforge.com/minecraft/mc-mods/jei">
+						JEI (Just Enough Items)
+					</a>
+					or
+					<a href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items">
+						REI (Roughly Enough Items)
+					</a>
+					as they both allow for the quick and easy browsing of items and their recipes,
+					as well as allowing you to preview what they do (Which is already part of
+					create) without having the item yet (Which was not a part of create). It also
+					has an incredible recipe preview menu.
+				</p>
+			</section>
+			<div class="layer2 spacer"></div>
+			<section class="curves-section myrtle-green">
+				<h1>
+					Get to know the
+					<strong class="animateoohyea">basics</strong>
+				</h1>
+				<p>
+					Create is entirely based around
+					<strong class="animateoohyea">decoration</strong>
+					,
+					<strong class="animateoohyea">automation</strong>
+					, and freedom of expression . Unlike other tech mods, such as AE2 where all
+					automation solutions are one block machines, Create us based around
+					<strong class="animateoohyea">
+						multi block networks of customizable machinery
+					</strong>
+					, allowing for a more
+					<strong class="animateoohyea">customizable</strong>
+					and
+					<strong class="animateoohyea">unique</strong>
+					experience. Create mod is truly the
+					<strong class="animateoohyea"></strong>
+					best mod for the creative and technical mind of minecraft players.
+				</p>
+				<!-- <img
+					class="creative-tab-img1"
+					src="images/creative-tab_create.palettes.png"
+					alt="Image listing all items in the automation sector." />
+				<img
+					class="creative-tab-img2"
+					src="images/creative-tab_create.base.png"
+					alt="Image listing all items in the decoration sector." /> -->
+				<div class="curves"></div>
+			</section>
+			<div class="layer3 spacer"></div>
+			<section class="curves-section persian-green">
+				<h1>
+					How the
+					<span class="animateoohyea">menu works</span>
+				</h1>
+				<p>
+					Create mod has many
+					<strong class="animateoohyea">wonderful menus</strong>
+					, but one that provials for beginners is the menu for
+					<strong class="animateoohyea">explaining specific blocks and machines</strong>
+					, defining their purpose and how to use them. To enter it, simply hover over the
+					item in your inventory and
+					<strong class="animateoohyea">hold "W"</strong>
+					or use JEI/REI to search it up and hover over it, holding "W" while doing so
+					until the menu pops up. This feature can be used for
+					<strong class="animateoohyea">any block</strong>
+					in the
+					<strong class="animateoohyea">entirety of create</strong>
+					, allowing for a
+					<strong class="animateoohyea">simple and clean</strong>
+					learning curve where you do not have to google videos on certain blocks.
+				</p>
+				<img
+					class="menu-img1"
+					src="images/hold_w_to_ponder.png"
+					alt="An Image showing the tooltip of 'Hold W to ponder'" />
+				<img
+					class="menu-img2"
+					src="images/toolbox.png"
+					alt="The Menu for the Toolbox Block." />
+				<img
+					class="menu-img3"
+					src="images/sequencer-gui.png"
+					alt="The Menu for the Sequencer Block." />
+			</section>
+			<div class="layer4 spacer"></div>
+			<section class="curves-section saffron">
+				<h1>
+					What are
+					<span class="animateoohyea">SU?</span>
+				</h1>
+				<p>
+					Stress units (SU) are a
+					<strong class="animateoohyea">measurement of power</strong>
+					used for machines. Contrary to popular belief, Stress Units (SU) and Rotations
+					Per Minute (RPM)
+					<strong class="animateoohyea">are separate</strong>
+					, they are two different things. For example, a small and a large waterwheel. A
+					small waterwheel spins at 8rpm with 256su, but a large water wheel spins at 4rpm
+					at 512su, but
+					<strong class="animateoohyea">they are not the same</strong>
+					. Stress units are a unit of power that is used to power machines, while
+					<strong class="animateoohyea">
+						RPM simply changes how fast the machines work.
+					</strong>
+
+					<br />
+					<br />
+					Stress units are used in
+					<strong class="animateoohyea">proportion</strong>
+					to the
+					<strong class="animateoohyea">"Kinetic Stress Impact"</strong>
+					. The
+					<strong class="iknow-weirdacronim">
+						<strong class="animateoohyea">KSI</strong>
+					</strong>
+					is a measurement of
+					<strong class="animateoohyea">how many stress units a machine uses</strong>
+					, and can be 2x RPM, 4x RPM and 8x RPM. This number is know as
+					<strong class="animateoohyea">the impact value</strong>
+					. An impact value of 2x RPM such as an encased fan, will use 2x stress units
+					equal to 2x the input RPM. For example, A mechanical drill which operates at 4x
+					RPM put onto a system with 64 RPM would use 256 stress units as 64 x 4 is 256.
+				</p>
+				<img
+					class="impact-img1"
+					src="images/encased_fan_impact.png"
+					alt="The KSI of an encased fan." />
+				<img
+					class="impact-img3"
+					src="images/mechanical_press_impact.png"
+					alt="The KSI of a mechanical press." />
+			</section>
+			<div class="layer5 spacer"></div>
+			<section class="curves-section earth-yellow">
+				<h1>What is RPM?</h1>
+				<p>
+					RPM, Unlike Stress Units, which are completely separate, are a
+					<strong class="animateoohyea-changed-color-1">
+						measurement of how fast a machine attached to that system will move
+					</strong>
+					. RPM, unlike Stress Units, can be scaled using things such as gear ratios,
+					where a
+					<strong class="animateoohyea-changed-color-1">
+						small and a large cogwheel
+					</strong>
+					are used in conjunction to
+					<strong class="animateoohyea-changed-color-1">generate more RPM</strong>
+					while keeping the
+					<strong class="animateoohyea-changed-color-1">same SU</strong>
+					, but this can also be done with a
+					<strong class="animateoohyea-changed-color-1">rotation speed controller</strong>
+					. . For example, a small waterwheel produces 256su at 8rpm, and a large water
+					wheel produces 512su at 4rpm are not the same, although it might seem like they
+					are.
+					<strong class="animateoohyea-changed-color-1">RPM can always be changed</strong>
+					using gear ratios such as the one seen below.
+				</p>
+				<img
+					class="rpm-img1"
+					src="images/rotation_speed_controller.png"
+					alt="A rotation seed controller block." />
+				<img class="rpm-img2" src="images/large_cogwheel.png" alt="A large cogwheel." />
+				<img class="rpm-img3" src="images/cogwheel.png" alt="A small cogwheel." />
+			</section>
+			<div class="layer6 spacer"></div>
+			<section class="curves-section coral">
+				<h1>How to build with Create</h1>
+				<p>
+					With create mod, you can
+					<strong class="animateoohyea-changed-color-2">build anything you want</strong>
+					, from an incredible factory to a simple house elevator,
+					<strong class="animateoohyea-changed-color-2">
+						Create Mod really has it all
+					</strong>
+					. Create mod also has many tools and items that
+					<strong class="animateoohyea-changed-color-2">make building smooth</strong>
+					, such as the
+					<strong class="animateoohyea-changed-color-2">wrench</strong>
+					. The wrench is a tool that is key to almost any playthrough of create, and it
+					allows you to
+					<strong class="animateoohyea-changed-color-2">
+						rotate the blocks and machines you place
+					</strong>
+					that are from create, but it also allows you to
+					<strong class="animateoohyea-changed-color-2">
+						pick up create machinery blocks
+					</strong>
+					by shift clicking them, allowing for a very quick and clean way to move or
+					bulldoze machines.
+					<br />
+					<br />
+					Another create Item that is very useful for building is the
+					<strong class="animateoohyea-changed-color-2">Toolbox</strong>
+					. A toolbox effectively acts as a
+					<strong class="animateoohyea-changed-color-2">pocket wormhole</strong>
+					for
+					<strong class="animateoohyea-changed-color-2">up to 8 items</strong>
+					.
+					<strong class="animateoohyea-changed-color-2">When nearby</strong>
+					a toolbox, a player can press their toolbox keybind: by default, this is 'Left
+					Alt' and it will open a somewhat circular menu, with 8 slots
+					<strong class="animateoohyea-changed-color-2">
+						storing a "Large Amount" (Even more than 64!)
+					</strong>
+					of each item for it to be quickly withdrawn, although the player must have put
+					the items in before hand. It can also
+					<strong class="animateoohyea-changed-color-2">be picked up</strong>
+					, and still retains its contents while in the inventory.
+				</p>
+				<img
+					class="build-img1"
+					src="images/wrench.apng"
+					alt="An animated create mod wrench." />
+				<img
+					class="build-img2"
+					src="images/brown_toolbox_block.png"
+					alt="A picture of a tool box." />
+			</section>
+			<div class="emptyfornow"></div>
+			<div class="layer7 spacer"></div>
+
+			<section class="curves-section burnt-sienna"></section>
+			<section class="footer-about">
+				<h4>About the creators</h4>
+				<p>
+					I chose to make a website about this for my IST (Computing Technology) class at
+					school.
+				</p>
+				<p>
+					This mod is not my original work. This is a Minecraft mod by the creator
+					<a href="https://www.curseforge.com/members/simibubi">simibubi</a>
+				</p>
+				<p>
+					Huge thankyou too Dejojotheawsome and his content over on
+					<a href="https://www.youtube.com/@dejojotheawsome">Youtube</a>
+					as his walkthroughs and informative long form content really drove this page to
+					have the best information it possibly could have.
+				</p>
+				<img
+					class="player-img"
+					src="images/player_Dejojotheawsome.png"
+					alt="A picture of Dejojotheawsome Minecraft Skin." />
+			</section>
+		</div>
+	</body>
 </html>
-</div>

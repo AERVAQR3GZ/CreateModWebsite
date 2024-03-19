@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="contact-html">
+	<head>
+		<!-- Sets the dynamic view of the webpage accross devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- This is what appears as the tab name-->
+		<title>The Create Mod</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- These are the icons that are in this website-->
+		<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+		<!--Imports the google fonts.-->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+		<script defer src="app.js"></script>
+	</head>
+	<div class="container">
+		<section class="not-header">
+			<nav class="nav-3">
+				<!--The importing of the Create Rise and Shine logo into the webpage-->
+				<a href="boxmodel.html"><img src="images/logo.png" alt="The Create 'Rise and Shine' Logo" class="image-1" /></a>
+				<div class="nav-links-3" id="navLinks">
+					<!--This is the X mark for the Hamburger Menu-->
+					<i class="fa-solid fa-xmark" style="color: #fcbf49ff" onclick="hideMenu()"></i>
+					<ul>
+						<!-- All of the links to different sub pages.-->
+						<li><a href="boxmodel.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="gallery.html">THE GALLERY</a></li>
+						<li><a href="contact.html">CONTACT ME</a></li>
+					</ul>
+				</div>
+				<!--This is the hamburger menu symble for the phone menu.-->
+				<i class="fa-solid fa-bars" style="color: #fcbf49ff" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<!---------JavaScript for Colapsable Menu for Phone---------->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+		</script>
+
+		<!----------CONTACT FORM----------->
+		<div class="contact-container">
+			<form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+				<div class="contact-left-title">
+					<h2>
+						Leave me
+						<span class="hoogidyboogidy">Feedback</span>
+					</h2>
+					<hr />
+				</div>
+				<input type="hidden" name="access_key" value="8c77d245-4978-4188-8e26-fa82bf7e25a3" />
+				<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required />
+				<input type="email" name="email" placeholder="Your Email" class="contact-inputs" required />
+				<textarea name="message" placeholder="Your Message for Me" class="contact-inputs" required></textarea>
+				<button type="submit">
+					Submit
+					<img src="images/arrow_icon.png" />
+				</button>
+			</form>
+			<div class="contact-right">
+				<img src="images/right_img.png" />
+			</div>
+		</div>
+		<!--------FOOOOOOOTer--------->
+
+		<section class="footer">
+			<h4>About the creators</h4>
+			<p>I chose to make a website about this for my IST (Computing Technology) class.</p>
+			<p>
+				This mod is not my original work. This is a Minecraft mod by the creator
+				<a href="https://www.curseforge.com/members/simibubi">simibubi</a>
+			</p>
+			<p>*If the mod is available for download, minecraft is availble, and the modding of minecraft is allowed.</p>
+		</section>
+		<script></script>
+	</div>
+</html>

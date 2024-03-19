@@ -1,52 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html class="gallery-html">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Create Mod - Gallery</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet" />
+		<script defer src="app.js"></script>
+	</head>
+	<body class="body-gallery">
+		<section class="container home">
+			<!-- <section class="home"> -->
+			<nav class="nav-2">
+				<a href="boxmodel.html">
+					<img
+						class="nottobescaled"
+						src="images/logo.png"
+						alt="The Create 'Rise and Shine' Logo"
+						class="image-1" />
+				</a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa-solid fa-xmark" style="color: #fffcdd" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="boxmodel.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="gallery.html">THE GALLERY</a></li>
+						<li><a href="contact.html">CONTACT ME</a></li>
+					</ul>
+				</div>
+				<i class="fa-solid fa-bars" style="color: #fffcdd" onclick="showMenu()"></i>
+			</nav>
+			<!-- </section> -->
+			<script>
+				var navLinks = document.getElementById("navLinks");
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Create Mod</title>
-    <link rel="stylesheet" href="gallery.css">
-    <script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <script defer src="app.js"></script>
-</head>
-<body>
+				function showMenu() {
+					navLinks.style.right = "0";
+				}
 
-<header>
-    <a href="#" class="createlogo"><img src="images/logo.png" alt=""></a>
-    <nav>
-        <div class="navigation">
-            <i class="fa-solid fa-xmark" style="color: #fffcdd;" onclick=hideMenu()></i>
-            <div class="navigation-items">
-                <ul>
-                    <li><a href="boxmodel.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="gallery.html">THE GALLERY</a></li>
-                    <li><a href="https://github.com/Creators-of-Create/Create/wiki">OFFICIAL WIKI</a></li>
-                    <li><a href="https://create.fandom.com/wiki/Create_Mod_Wiki">UNOFFICIAL WIKI</a></li>
-                </ul>
-            </div>
-        </div>
-        <i class="fa-solid fa-bars" style="color: #fffcdd;" onclick=showMenu()></i>
-    </nav>
-</header>
-<section class="home">
-    <div class="content">
-        <h1>Advanced.<br><span>Technicals</span></h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque ex corrupti dicta aut nam fugiat nostrum laboriosam soluta molestiae? Cum blanditiis voluptatibus fugiat assumenda inventore nobis explicabo accusantium consequatur!</p>
-    </div>
-</section>
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script>
-
-</body>
+				function hideMenu() {
+					navLinks.style.right = "-200px";
+				}
+			</script>
+			<section class="home">
+				<section class="home onlytexthome image-slide-parent">
+					<!-- <img class="image-slide" src="images/gallery-1.png" /> -->
+					<img class="image-slide active" src="images/gallery-1.png" />
+					<img class="image-slide" src="images/gallery-2.png" />
+					<img class="image-slide" src="images/gallery-3.png" />
+					<img class="image-slide" src="images/banner-3.png" />
+					<img class="image-slide" src="images/gallery-5.png" />
+					<div class="content active">
+						<h1>
+							Incredible
+							<br />
+							<span class="styled-text">Technicalities</span>
+						</h1>
+						<p>
+							This picture shows the capabilities of a steam engine, which is a late
+							game mechanism, allowing you to produce up to 294,912 SU in one machine.
+							Although this might seem overpowered, it is in fact not as there is a
+							lot of hard to get materials that need to be automated in order to keep
+							it running, such as blaze cakes.
+						</p>
+					</div>
+					<div class="content">
+						<h1>
+							Extensive
+							<br />
+							<span class="styled-text">Reaches</span>
+						</h1>
+						<p>
+							This picture shows the far extents of Create Mod, as it even reaches far
+							and often untouched parts of automation such as the breeding or handling
+							of animals. In this case, the image shows a barn house with cows being
+							milked. The source of this image is the Create Mod Trailer World.
+						</p>
+					</div>
+					<div class="content">
+						<h1>
+							Infinite
+							<br />
+							<span class="styled-text">Possibilities</span>
+						</h1>
+						<p>
+							This is a picture from the Create Mod Trailer World that shows a house
+							being lowered onto a platform of pipes and gears, showing the sheer
+							extent of the mod's capabilities, in corelation to the players
+							creativity. Almost anything can be done with create.
+						</p>
+					</div>
+					<div class="content">
+						<h1>
+							Amazing
+							<br />
+							<span class="styled-text">Automation</span>
+						</h1>
+						<p>
+							This screenshot, once again from the trailer world, depicts a scene of
+							dough and seeds being sorted onto a conveyor belt, where they are then
+							moved away. This shows the amazing capabilities field of automation that
+							the mod offers, the same field that is the reason it is still alive and
+							thriving to this day.
+						</p>
+					</div>
+					<div class="content">
+						<h1>
+							Complete
+							<br />
+							<span class="styled-text">Freedom</span>
+						</h1>
+						<p>
+							This is a screenshot form, once again, you guessed it, the Create Mod
+							Trailer World, and it shows the cake, the final product of the world
+							that all of my pictures are from. This shows that, no matter the goal of
+							create, you can accomplish that goal, and that is the beauty of the mod.
+						</p>
+					</div>
+					<div class="slider-navigation">
+						<div class="slider-btn active"></div>
+						<div class="slider-btn"></div>
+						<div class="slider-btn"></div>
+						<div class="slider-btn"></div>
+						<div class="slider-btn"></div>
+					</div>
+				</section>
+			</section>
+		</section>
+		<script type="text/javascript">
+			const btns = document.querySelectorAll(".slider-btn");
+			const slides = document.querySelectorAll(".image-slide");
+			const contents = document.querySelectorAll(".content");
+			var sliderNav = function (manual) {
+				btns.forEach((btn) => {
+					btn.classList.remove("active");
+				});
+				slides.forEach((slide) => {
+					slide.classList.remove("active");
+				});
+				contents.forEach((content) => {
+					content.classList.remove("active");
+				});
+				btns[manual].classList.add("active");
+				slides[manual].classList.add("active");
+				contents[manual].classList.add("active");
+			};
+			btns.forEach((btn, i) => {
+				btn.addEventListener("click", () => {
+					sliderNav(i);
+				});
+			});
+		</script>
+	</body>
 </html>
-</div>
