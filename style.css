@@ -82,7 +82,7 @@
 	width: 100%;
 	/*Background image tint*/
 	background-image: linear-gradient(rgba(128, 28, 0, 0.4), rgba(128, 28, 0, 0.4)),
-		url(images/banner.png);
+		url(images/banner.jpg);
 	/*Centers background image*/
 	background-position: center;
 	/*Stretches the image if needed.*/
@@ -469,7 +469,7 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	width: 80%;
 	/*Sets the background for the banner at the bottom of the page. */
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(images/gallery-2.png);
+		url(images/gallery-2.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 35px;
@@ -579,14 +579,14 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 }
 .creative-tab-img1 {
 	width: 600px;
-	transform: translate(-0%, 25%);
+	transform: translate(0vh, 0.24vw);
 	padding-top: 200px;
 	display: flex;
 	position: absolute;
 }
 .creative-tab-img2 {
 	width: 600px;
-	transform: translate(0%, -9%);
+	transform: translate(0%, 0.9vw);
 	padding-top: 200px;
 	display: flex;
 	position: absolute;
@@ -594,21 +594,21 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 .menu-img1 {
 	width: 600px;
 	/* transform: translateX(-200%); */
-	transform: translateY(20%);
+	transform: translateY(10vw);
 	padding-top: 200px;
 	display: flex;
 	position: absolute;
 }
 .menu-img2 {
 	width: 300px;
-	transform: translate(-165%, -10%);
+	transform: translate(-34vw, -6.5vh);
 	padding-top: 240px;
 	display: flex;
 	position: absolute;
 }
 .menu-img3 {
 	width: 200px;
-	transform: translate(260%, -10%);
+	transform: translate(36vw, -6vh);
 	image-orientation: flip;
 	padding-top: 260px;
 	display: flex;
@@ -616,34 +616,35 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 }
 .impact-img1 {
 	width: 400px;
-	transform: translateX(-140%);
+	transform: translateX(-38.5vw);
 	padding-top: 400px;
 	display: flex;
 	position: absolute;
 }
 .impact-img3 {
 	width: 400px;
-	transform: translateX(140%);
+	transform: translateX(38.5vw);
 	position: absolute;
 	padding-top: 400px;
 }
 .rpm-img1 {
 	width: 175px;
-	transform: translateX(-280%);
+	transform: translateX(-35vw);
 	padding-top: 200px;
 	display: flex;
 	position: absolute;
 }
 .rpm-img2 {
 	width: 300px;
-	transform: translateX(180%);
+	transform: translateX(35vw);
 	padding-top: 200px;
 	display: flex;
 	position: absolute;
 }
 .rpm-img3 {
 	width: 300px;
-	transform: translate(207.5%, -13%);
+	/* transform: translate(207.5%, -13%); */
+	transform: translate(40.7vw, -8vh);
 	image-orientation: 210deg;
 	padding-top: 200px;
 	display: flex;
@@ -651,21 +652,21 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 }
 .build-img1 {
 	width: 180px;
-	transform: translateX(-260%);
+	transform: translateX(-32vw);
 	padding-top: 150px;
 	display: flex;
 	position: absolute;
 }
 .build-img2 {
 	width: 275px;
-	transform: translateX(180%);
+	transform: translateX(35vw);
 	padding-top: 350px;
 	display: flex;
 	position: absolute;
 }
 .player-img {
 	width: 250px;
-	transform: translate(460%, -100%);
+	transform: translate(6vw, -58vh);
 	padding-top: 220px;
 	display: flex;
 	position: absolute;
@@ -703,7 +704,6 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 h1 {
 	padding-top: 100px;
 }
-
 .spacer {
 	aspect-ratio: 900/300;
 	width: 100%;
@@ -825,7 +825,7 @@ h1 {
 }
 .gallery-html {
 	overflow-y: hidden;
-	position: absolute;
+	position: relative;
 	display: block;
 	width: 100%;
 	background: var(--xanthous-hex);
