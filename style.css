@@ -418,6 +418,7 @@ and after the animation has finished. */
 	padding-top: 100px;
 	text-align: center;
 }
+/*This sets the flex peramiters for the columns of the reviews.*/
 .reviews-col {
 	flex-basis: 44%;
 	border-radius: 27px;
@@ -425,20 +426,24 @@ and after the animation has finished. */
 	text-align: left;
 	background: var(--cornsilk-hex);
 	padding: 25px;
+	/*Means the cursor will appear as normal when hovering over the boxes. */
 	cursor: pointer;
 	display: flex;
 }
 .reviews-col a {
+	/*Gets rid of the underline from a link.*/
 	text-decoration: none;
 	text-decoration-color: black;
 	color: black;
+	/*Means it slowly changes colors when hovered which is later.*/
 	transition: 0.3s;
 }
 /*Sets the color to be the same even after visited.*/
 .reviews-col a:link a:visited {
 	text-decoration: none;
 }
-/*This is so the link can be seen as a link.*/
+/*This is so the link can be seen as a link clearly.*/
+/*makes it change color on hover.*/
 .reviews-col a:hover {
 	color: var(--xanthous-rgba);
 }
@@ -447,6 +452,7 @@ and after the animation has finished. */
 	height: 40px;
 	margin-left: 5px;
 	margin-right: 30px;
+	/*Rounds the images.*/
 	border-radius: 50%;
 }
 .reviews-col p {
@@ -456,6 +462,7 @@ and after the animation has finished. */
 	margin-top: 15px;
 	text-align: left;
 }
+/*This is the icons, which in this case are stars.*/
 .reviews-col .fa {
 	color: var(--orange-wheel-hex);
 }
@@ -470,14 +477,17 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	/*Sets the background for the banner at the bottom of the page. */
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url(images/gallery-2.jpg);
+	/*Centers the background image.*/
 	background-position: center;
 	background-size: cover;
+	/*Rounds the corners of the image.*/
 	border-radius: 35px;
 	text-align: center;
 	padding: 100px 0;
 	scale: 1;
 	transition: transform 0.5s ease-in-out;
 }
+/*Makes it slightly larger on hover. */
 .why-you-should-play:hover {
 	transform: scale(1.025);
 }
@@ -489,24 +499,33 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 
 /*--------Foottttter---------------*/
 
+/* COMMENTS AND COMMENTS ONLY */
+
+/* Footer Styles */
 .footer {
 	width: 100%;
 	text-align: center;
 	padding: 30px 0;
 }
+
 .footer h4 {
 	margin-bottom: 25px;
 	margin-top: 20px;
 	font-weight: 600;
 }
+
+/* Text animation for the span text so that it is bolded and stands out.*/
 .animateoohyea {
 	background-clip: text;
 	color: transparent;
+	/*Sets the colors to be a linier gradient between the two colors stored as variables*/
 	background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
 	background-size: 450% 450%;
 	animation: animate 15s ease infinite;
 	font-weight: bold;
 }
+/* Seperate text animation for the span text so that it is bolded and stands out 
+against the background that was the same color*/
 .animateoohyea-changed-color-1 {
 	background-clip: text;
 	color: transparent;
@@ -515,6 +534,8 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	animation: animate 15s ease infinite;
 	font-weight: bold;
 }
+/* Seperate Text Animation for the span text so that it is bolded and stands out 
+against the background that was the same color*/
 .animateoohyea-changed-color-2 {
 	background-clip: text;
 	color: transparent;
@@ -523,6 +544,7 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	animation: animate 15s ease infinite;
 	font-weight: bold;
 }
+/*This rotates and moves the position of the linier gradient background to be animated.*/
 @keyframes animate {
 	0% {
 		background-position: 0 0;
@@ -541,11 +563,8 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	}
 }
 
-/*------------------------------------------------------------------------------------------*/
-/*--------------------------                      ------------------------------------------*/
-/*--------------------------      ABOUT PAGE      ------------------------------------------*/
-/*--------------------------                      ------------------------------------------*/
-/*------------------------------------------------------------------------------------------*/
+/*This is the header section, which is the section that is at the page, and 
+in this case contains the nav bar. */
 .sub-header {
 	height: 10vw;
 	width: 100%;
@@ -554,145 +573,227 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	position: relative;
 	padding-bottom: 100px;
 }
+/*Background of the whole page.*/
 .curves-body {
 	margin: 0;
 	color: white;
 	background: #4d1100;
-	/* overflow-x: hidden; */
 }
+/*This is the div that applies to all of the color sections.*/
 .curves-section {
-	/*Allows its children to be abselutely possitioned within it.*/
 	position: relative;
 	display: flex;
+	/*Sets the text and heading to be centered at first in a*/
 	flex-direction: column;
 	align-items: center;
+	/*sets the height to 0 to begin with*/
 	height: 0;
-	/*Gives 20% of the acctuall view poet width (20vw)*/
 	padding: 125px 20vw;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 }
+/*This is to make the link in the first paragraph look clean.*/
 .curves-section a {
+	/*Removes the underline from the link.*/
 	text-decoration: none;
 	color: grey;
 }
-.creative-tab-img1 {
+
+/* Image Styles */
+/*This is the image for the menu section, and it is the first image.*/
+.menu-img1 {
 	width: 600px;
-	transform: translate(0vh, 0.24vw);
+	/*Moves the image down by 10vw*/
+	transform: translateY(10vw);
+	/*Sets the padding for the top to be a 200px.*/
 	padding-top: 200px;
+	/*Displays the image as a flex container.*/
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
-.creative-tab-img2 {
-	width: 600px;
-	transform: translate(0%, 0.9vw);
-	padding-top: 200px;
+/*This is the second image for the menu section.*/
+.menu-img2 {
+	width: 300px;
+	/*This moves the second image to the left by 34vw, and up by 6.5vh*/
+	transform: translate(-34vw, -6.5vh);
+	/*Sets the padding for the top to be a 240px.*/
+	padding-top: 240px;
+	/*Displays the image as a flex container.*/
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
+	position: absolute;
+}
+/*This is the third image for the menu section.*/
+.menu-img3 {
+	width: 200px;
+	/*This moves the third image to the right by 36vw, and up by 6vh*/
+	transform: translate(36vw, -6vh);
+	/*Sets the padding for the top to be a 260px.*/
+	padding-top: 260px;
+	/*Displays the image as a flex container.*/
+	display: flex;
+	/*Sets the position of the image to be absolute.*/
+	position: absolute;
+}
+/*This is the first image for the impact section.*/
+.impact-img1 {
+	width: 400px;
+	/*This moves the image to the left by 38.5vw*/
+	transform: translateX(-38.5vw);
+	/*Sets the padding for the top to be a 400px.*/
+	padding-top: 400px;
+	/*Displays the image as a flex container.*/
+	display: flex;
+	/*Sets the position of the image to be absolute.*/
+	position: absolute;
+}
+/*This is the third image for the impact section.*/
+.impact-img3 {
+	width: 400px;
+	/*This moves the image to the right by 38.5vw*/
+	transform: translateX(38.5vw);
+	/*Sets the padding for the top to be a 400px.*/
+	padding-top: 400px;
+	/*Displays the image as a flex container.*/
+	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
 .menu-img1 {
 	width: 600px;
-	/* transform: translateX(-200%); */
 	transform: translateY(10vw);
 	padding-top: 200px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .menu-img2 {
 	width: 300px;
 	transform: translate(-34vw, -6.5vh);
 	padding-top: 240px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .menu-img3 {
 	width: 200px;
 	transform: translate(36vw, -6vh);
 	image-orientation: flip;
 	padding-top: 260px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .impact-img1 {
 	width: 400px;
 	transform: translateX(-38.5vw);
 	padding-top: 400px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .impact-img3 {
 	width: 400px;
 	transform: translateX(38.5vw);
+	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 	padding-top: 400px;
 }
+
 .rpm-img1 {
 	width: 175px;
 	transform: translateX(-35vw);
 	padding-top: 200px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .rpm-img2 {
 	width: 300px;
 	transform: translateX(35vw);
 	padding-top: 200px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .rpm-img3 {
 	width: 300px;
-	/* transform: translate(207.5%, -13%); */
 	transform: translate(40.7vw, -8vh);
 	image-orientation: 210deg;
 	padding-top: 200px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .build-img1 {
 	width: 180px;
 	transform: translateX(-32vw);
 	padding-top: 150px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .build-img2 {
 	width: 275px;
 	transform: translateX(35vw);
 	padding-top: 350px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
 .player-img {
 	width: 250px;
 	transform: translate(6vw, -58vh);
 	padding-top: 220px;
 	display: flex;
+	/*Sets the position of the image to be absolute.*/
 	position: absolute;
 }
+
+/* Color Styles where the background color is set to be
+the same as the top/bottom of the svg. */
 .charcoal {
 	background: var(--barn-red-hex);
 }
+
 .myrtle-green {
 	background: #ab2214ff;
 }
+
 .persian-green {
 	background: var(--fire-engine-red-hex);
 }
+
 .saffron {
 	background: #e75414ff;
 }
+
 .earth-yellow {
 	background: var(--orange-wheel-hex);
 }
+
 .coral {
 	background: var(--xanthous-hex);
 }
+
 .burnt-sienna {
 	background: var(--cornsilk-hex);
 	color: black;
 }
+
+/* Curves Styles */
 .curves {
 	position: absolute;
 	height: 500px;
@@ -700,38 +801,55 @@ reviews entirely as they were fun to code, but they dont really fit.*/
 	width: 100%;
 	bottom: 0;
 }
+/*Sets the text to be almost centered in the section of color.*/
 .curves-section p,
 h1 {
 	padding-top: 100px;
 }
+/*This is the place where the .svg's go for the waves 
+between the sections. */
 .spacer {
+	/* Sets the aspect ratio to be the save as the svg, so it 
+	would not look stretched. */
 	aspect-ratio: 900/300;
 	width: 100%;
+	/* Sets the background to not repeat. */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
+/* All of these are the .svg's that have waves with the bottom color
+being the next and the top color being the previous color.  */
 .layer1 {
 	background-image: url("images/waves1.svg");
 }
+
 .layer2 {
 	background-image: url("images/waves2.svg");
 }
+
 .layer3 {
 	background-image: url("images/waves3.svg");
 }
+
 .layer4 {
 	background-image: url("images/waves4.svg");
 }
+
 .layer5 {
 	background-image: url("images/waves5.svg");
 }
+
 .layer6 {
 	background-image: url("images/waves6.svg");
 }
+
 .layer7 {
 	background-image: url("images/waves7.svg");
 }
+
+/* Footer About Styles, just containing the credit to the youtuber 
+(Me can not remember name so me not put in name).*/
 .footer-about {
 	width: 100%;
 	padding-top: 100px;
@@ -742,24 +860,22 @@ h1 {
 	transform: translateY(-100%);
 	position: absolute;
 }
+/* Sets the link to be blue. */
 .footer-about a {
 	color: blue;
 }
-
+/* Sets all the text to be white with a font size of 15px. */
 .curves-section p {
 	color: white;
 	font-size: 15px;
+	/* I used the z-index because I was playing around with it disapearing and 
+	am to scared to remove it.  */
 	z-index: 5;
-	/* mix-blend-mode: difference; */
 }
-/* .curves-section p,
+/* Sets a gap between the top of the text and the start of the previous waves. */
 h1 {
 	padding-top: 100px;
-} */
-/* .curves-section.coral p {
-	column-count: 2;
-	column-gap: 50px;
-} */
+}
 
 /****************************
  * ***********************  *
@@ -772,6 +888,7 @@ h1 {
  * * *******************  * *
  * ***********************  *
  ****************************/
+/* This is the nav img that I had a problem with it scaling separately. */
 .nottobescaled {
 	transition: transform 0.5s ease-in-out;
 	width: 150px;
@@ -785,6 +902,8 @@ h1 {
 .nav-2 i {
 	display: none;
 }
+/* This is the second nav, I made another one as the colors for the text
+are differed. */
 .nav-2 {
 	display: flex;
 	padding: 2% 6%;
@@ -840,17 +959,25 @@ h1 {
 	margin-bottom: 110px;
 	z-index: 0;
 }
+/* This is the image on each slide. */
 .home .image-slide-parent img {
 	z-index: 0;
+	/* This fixes the image being confined between the nav bar. */
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 70%;
+	/* Scales it so on my device it is perfectly scaled to cropped, and should
+	be perfectly scaled on other devices now that it has been changed to VH instead
+	of %. */
+	height: 100vh;
 	object-fit: cover;
 	background-size: cover;
 }
+/* This is the tint on the images.  */
 .home::before {
+	/* Sets the layer to just be higher than the background 
+	image but lower than the text and nav. */
 	z-index: 1;
 	content: "";
 	position: absolute;
@@ -860,17 +987,22 @@ h1 {
 	top: 0;
 	left: 0;
 }
+/* This is the parent div of the slider buttons */
 .slider-navigation {
 	position: relative;
 	display: flex;
 	z-index: 3;
 	justify-content: center;
 	align-items: center;
+	/* moves it 80px to the right. */
 	transform: translateY(-80px);
 	margin-bottom: 12px;
 	padding-top: 200px;
 }
+/* These are each of the buttons for the selection. */
 .slider-navigation .slider-btn {
+	/* Sets the items to be as tall as they are high, 
+	and rounds them to be a perfect circle. */
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
@@ -881,31 +1013,46 @@ h1 {
 	z-index: 4;
 	position: relative;
 }
+/* This fixes the problem of there being extra padding on the last
+item that messes with the positioning. */
 .slider-navigation .slider-btn:not(:last-child) {
 	margin-right: 20px;
 }
+/* The buttons get bigger when hovered. */
 .slider-navigation .slider-btn:hover {
 	transform: scale(1.2);
 }
-
+/* This is a replacement for the class home, where it is only this text box instead of every 
+paragraph with the parent home. */
 .onlytexthome p {
 	padding-left: 0;
 	color: white;
+	/* Sets the width of the text to be 400, which is somewhat thin. */
 	font-weight: 400;
 }
 .onlytexthome h1 {
+	/* Sets the font size relative to the size of the base font.*/
 	font-size: 4em;
+	/* Sets the font to be effectively bold. */
 	font-weight: 900;
+	/* Sets all of the text to be capital. */
 	text-transform: uppercase;
+	/* Changes the spacing between the letters to be 5 px. */
 	letter-spacing: 5px;
+	/* Changes the height of the lines to be larger than normal. */
 	line-height: 75px;
 	margin-bottom: 40px;
 	color: white;
 }
 .home .content {
+	/* Sets the content which is in this case the h1 and the p to be 
+	to be higher than the tint. */
 	z-index: 1;
+	/* Sets the text that is not set to be active by the JS to be not present. */
 	display: none;
 }
+/* This turns the text to be visible when it has the class
+of active from the JS. */
 .home .content.active {
 	z-index: 1;
 	display: block;
@@ -917,26 +1064,35 @@ h1 {
 	font-size: 1.2em;
 	font-weight: 600;
 }
+/* Sets the color of the slider button that has the class of active to be red. */
 .slider-navigation .slider-btn.active {
 	background: var(--fire-engine-red-hex);
 }
 .image-slide {
 	position: absolute;
 	width: 100%;
+	/* This is the circle animation that comes from the side. */
 	clip-path: circle(0% at 0 37.5%);
 }
+/* Makes the circle go outwards fully when the image slide has the class of active. */
 .image-slide.active {
 	clip-path: circle(150% at 0 50%);
 	transition: 2s ease;
 	transition-property: clip-path;
 }
+
 /*--------------------------CONTACT ME PAGE----------------------------*/
+
 .contact-html {
+	/* Makes it so that there is no scroll in the page as it was slightly broken. */
 	overflow-y: hidden;
 }
+/* Same old larger image on the nav when hover.
+THis image is the create mod logo. */
 .nav-3 img:hover {
 	transform: scale(1.2);
 }
+/* Sets the hamburger icons to not be visible until in mobile view. */
 .nav-3 i {
 	display: none;
 }
@@ -978,11 +1134,14 @@ h1 {
 .contact-container {
 	height: 100vh;
 	display: flex;
+	/* Sets a background that goes from near white to yellow back to 
+	near white at the top and bottom. */
 	background: linear-gradient(#fffef7, #fff8d5, #fffef7);
 	align-items: center;
 	justify-content: space-evenly;
 	transform: translateY(-10%);
 }
+/* this is the text boxes and everything else that is on the left. */
 .contact-left {
 	display: flex;
 	flex-direction: column;
@@ -990,6 +1149,7 @@ h1 {
 	gap: 20px;
 	transition: 1s;
 }
+/* This is the title of the contact form. */
 .contact-left-title h2 {
 	font-weight: 600;
 	color: var(--xanthous-hex);
@@ -997,6 +1157,7 @@ h1 {
 	margin-bottom: 5px;
 	transition: 1s;
 }
+/* The styling for the paragraph styled break. */
 .contact-left-title hr {
 	border: none;
 	width: 125px;
@@ -1005,30 +1166,40 @@ h1 {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	margin-left: 0px;
+	/* Sets the transition to be slower at the start and end than the middle. */
 	transition: ease-in-out 1s;
 }
+/* This is the bar that moves when hovered over. */
 .contact-left-title:hover hr {
 	width: 405px;
+	/* THis moves the bar. */
 	margin-left: 205px;
 	width: 195px;
 	background-color: var(--orange-wheel-hex);
 }
+/* This is the word that changes color when hovered. */
 .hoogidyboogidy {
 	transition: ease-in-out 1s;
 }
+/* The code that changes the feedback word when hovered. */
 .contact-left-title:hover h2 .hoogidyboogidy {
 	color: var(--orange-wheel-hex);
 }
+/* These are the input fields' boxes. */
 .contact-inputs {
 	width: 400px;
 	height: 50px;
+	/* These functions will be re-defined later when the text box
+	is selected. */
 	border: none;
 	outline: none;
 	padding-left: 25px;
 	font-weight: 500;
 	color: #666666;
+	/* Rounds the ends to be circular. */
 	border-radius: 50px;
 }
+/* THese are the text areas of the input fields. */
 .contact-left textarea {
 	height: 140px;
 	padding-top: 15px;
@@ -1037,9 +1208,11 @@ h1 {
 .contact-inputs:focus {
 	border: 2px solid var(--xanthous-hex);
 }
+/* This is the color of the placeholder text. */
 .contact-inputs::placeholder {
 	color: #a9a9a9;
 }
+/* This is the submit button. */
 .contact-left button {
 	display: flex;
 	align-items: center;
@@ -1049,12 +1222,16 @@ h1 {
 	gap: 10px;
 	border: none;
 	border-radius: 50px;
+	/* Sets the gradient color of the button. */
 	background: linear-gradient(270deg, var(--xanthous-hex), var(--orange-wheel-hex));
+	/* Sets the cursor to be a pointer so it looks clickable. */
 	cursor: pointer;
 }
+/* This styles the arrow image of the button. */
 .contact-left button img {
 	height: 15px;
 }
+/* This styles the image to the right of the text-fields. */
 .contact-right img {
 	width: 500px;
 }
@@ -1452,12 +1629,14 @@ h1 {
 		color: transparent;
 		background-image: linear-gradient(var(--xanthous-hex), var(--orange-wheel-hex));
 		background-size: 450% 450%;
+		-webkit-background-clip: text;
 		animation: animate 15s ease infinite;
 		font-weight: bold;
 		position: relative;
 	}
 	.animateoohyea-changed-color-1 {
 		background-clip: text;
+		-webkit-background-clip: text;
 		color: transparent;
 		background-image: linear-gradient(var(--xanthous-hex-lighter), var(--xanthous-hex));
 		background-size: 450% 450%;
@@ -1468,6 +1647,7 @@ h1 {
 	.animateoohyea-changed-color-2 {
 		background-clip: text;
 		color: transparent;
+		-webkit-background-clip: text;
 		background-image: linear-gradient(var(--orange-wheel-hex-lighter), var(--orange-wheel-hex));
 		background-size: 450% 450%;
 		animation: animate 15s ease infinite;

@@ -3,10 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Allows the @media query's to work. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Page title in the browser tab. -->
 		<title>The Create Mod - Gallery</title>
+		<!-- The link to the stylesheet -->
 		<link rel="stylesheet" href="style.css" />
+		<!-- Adds the font-awsome icons. -->
 		<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
+		<!-- Adds the google fonts font. -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
 			rel="stylesheet" />
@@ -14,9 +19,9 @@
 	</head>
 	<body class="body-gallery">
 		<section class="container home">
-			<!-- <section class="home"> -->
 			<nav class="nav-2">
-				<a href="index.html">
+				<a href="home.html">
+					<!-- The image in the nav. -->
 					<img
 						class="nottobescaled"
 						src="images/logo.png"
@@ -24,18 +29,22 @@
 						class="image-1" />
 				</a>
 				<div class="nav-links" id="navLinks">
+					<!-- This is the icon that is in the hamburger menu. -->
 					<i class="fa-solid fa-xmark" style="color: #fffcdd" onclick="hideMenu()"></i>
 					<ul>
+						<!-- Each of the links to each of the pages in the nav bar. -->
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="about.html">ABOUT</a></li>
 						<li><a href="gallery.html">THE GALLERY</a></li>
 						<li><a href="contact.html">CONTACT ME</a></li>
 					</ul>
 				</div>
+				<!-- This is the icon that is in the hamburger menu. -->
 				<i class="fa-solid fa-bars" style="color: #fffcdd" onclick="showMenu()"></i>
 			</nav>
-			<!-- </section> -->
+			<!-- The JS for the hamburger menu -->
 			<script>
+				// Detects the elements with teh id of navLinks and sets them to a variable.
 				var navLinks = document.getElementById("navLinks");
 
 				function showMenu() {
@@ -47,14 +56,15 @@
 				}
 			</script>
 			<section class="home">
+				<!-- This is the parent div for styling the images and text. -->
 				<section class="home onlytexthome image-slide-parent">
-					<!-- <img class="image-slide" src="images/gallery-1.png" /> -->
 					<img class="image-slide active" src="images/gallery-1.jpg" />
 					<img class="image-slide" src="images/gallery-2.jpg" />
 					<img class="image-slide" src="images/gallery-3.jpg" />
 					<img class="image-slide" src="images/banner-3.jpg" />
 					<img class="image-slide" src="images/gallery-5.jpg" />
 					<div class="content active">
+						<!-- This is all about the advanced technical such as steamengines in create mod -->
 						<h1>
 							Incredible
 							<br />
@@ -69,6 +79,7 @@
 						</p>
 					</div>
 					<div class="content">
+						<!-- This is all about the animals image and how you can do a lot in create mod -->
 						<h1>
 							Extensive
 							<br />
@@ -82,6 +93,8 @@
 						</p>
 					</div>
 					<div class="content">
+						<!-- This is all about the house coming down on the pool image, which shows 
+							how much you can do in create-->
 						<h1>
 							Infinite
 							<br />
@@ -95,6 +108,8 @@
 						</p>
 					</div>
 					<div class="content">
+						<!-- This is all about the dough and seeds being sorted onto a conveyor belt 
+							image, which shows how much you can do in create-->
 						<h1>
 							Amazing
 							<br />
@@ -109,6 +124,8 @@
 						</p>
 					</div>
 					<div class="content">
+						<!-- This image is the final scene of the create mod trailer world and 
+						shows the freedome and self expression that you can have. -->
 						<h1>
 							Complete
 							<br />
@@ -121,7 +138,10 @@
 							create, you can accomplish that goal, and that is the beauty of the mod.
 						</p>
 					</div>
+
 					<div class="slider-navigation">
+						<!-- This btn starts active so that you can see which image is selected 
+						on first load. -->
 						<div class="slider-btn active"></div>
 						<div class="slider-btn"></div>
 						<div class="slider-btn"></div>
@@ -131,6 +151,8 @@
 				</section>
 			</section>
 		</section>
+		<!-- All of this Javascript detects when something is selected and adds the 
+		class of actice and otherwise removes the class of active. -->
 		<script type="text/javascript">
 			const btns = document.querySelectorAll(".slider-btn");
 			const slides = document.querySelectorAll(".image-slide");

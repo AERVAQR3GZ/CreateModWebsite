@@ -9,20 +9,27 @@
 		<!-- These are the icons that are in this website-->
 		<script src="https://kit.fontawesome.com/8d3778546a.js" crossorigin="anonymous"></script>
 		<!--Imports the google fonts.-->
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet" />
 		<script defer src="app.js"></script>
 	</head>
 	<div class="container">
 		<section class="not-header">
 			<nav class="nav-3">
 				<!--The importing of the Create Rise and Shine logo into the webpage-->
-				<a href="index.html"><img src="images/logo.png" alt="The Create 'Rise and Shine' Logo" class="image-1" /></a>
+				<a href="index.html">
+					<img
+						src="images/logo.png"
+						alt="The Create 'Rise and Shine' Logo"
+						class="image-1" />
+				</a>
 				<div class="nav-links-3" id="navLinks">
 					<!--This is the X mark for the Hamburger Menu-->
 					<i class="fa-solid fa-xmark" style="color: #fcbf49ff" onclick="hideMenu()"></i>
 					<ul>
 						<!-- All of the links to different sub pages.-->
-						<li><a href="boxmodel.html">HOME</a></li>
+						<li><a href="index.html">HOME</a></li>
 						<li><a href="about.html">ABOUT</a></li>
 						<li><a href="gallery.html">THE GALLERY</a></li>
 						<li><a href="contact.html">CONTACT ME</a></li>
@@ -55,13 +62,34 @@
 					</h2>
 					<hr />
 				</div>
-				<input type="hidden" name="access_key" value="8c77d245-4978-4188-8e26-fa82bf7e25a3" />
-				<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required />
-				<input type="email" name="email" placeholder="Your Email" class="contact-inputs" required />
-				<textarea name="message" placeholder="Your Message for Me" class="contact-inputs" required></textarea>
+				<!-- All of these are different input fields for each of the sections. -->
+				<input
+					type="hidden"
+					name="access_key"
+					value="8c77d245-4978-4188-8e26-fa82bf7e25a3" />
+				<!-- The key above is the key that links to my personal email and lets the 
+					form actually function. -->
+				<input
+					type="text"
+					name="name"
+					placeholder="Your Name"
+					class="contact-inputs"
+					required />
+				<input
+					type="email"
+					name="email"
+					placeholder="Your Email"
+					class="contact-inputs"
+					required />
+				<textarea
+					name="message"
+					placeholder="Your Message for Me"
+					class="contact-inputs"
+					required></textarea>
 				<button type="submit">
 					Submit
 					<img src="images/arrow_icon.png" />
+					<!-- This is the arrow within the submit button. -->
 				</button>
 			</form>
 			<div class="contact-right">
